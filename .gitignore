@@ -1,5 +1,5 @@
 # directories for local development
-asset/
+src/asset/
 src/css/.sass-cache
 src/bower_components
 

@@ -2,8 +2,13 @@
 @import "compass/css3";
 
 body {
+  // background
   background-color: #ffffff;
   background-image: image-url("ricepaper2.png");
+
+  // disable user select and cursor style
+  cursor: default;
+  @include user-select(none);
 }
 
 .coming-soon {

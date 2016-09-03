@@ -1,39 +1,121 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <title>Conrad Lo</title>
 
+  <!-- meta -->
+  <!-- https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Obsolete_things_to_avoid -->
+
+  <!-- meta : charset declaration -->
+  <meta charset="utf-8">
+
+  <!-- meta : pragma directive -->
+  <!-- http://stackoverflow.com/a/14611323 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=9, chrome=1">
+
+  <!-- meta : document-level metadata  -->
+
+  <meta name="author" content="Conrad Lo" />
+  <meta name="generator" content="handcrafted">
+  <meta name="description" content="This is my online name card" />
+
+  <meta name='viewport' content='user-scalable=no, width=device-width, initial-scale=1.0' />
+
+  <!--
+
+  <meta name="keywords" content="favicon, ico, generator, node, realfavicongenerator, gulp, terminal" />
+  <meta name="format-detection" content="telephone=yes" />
+  <meta name="robots" content="index, follow" />
+
+  -->
+
+  <!-- favicon -->
+
+  <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+
+  <!-- apple safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <!-- ios -->
+  <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#262626">
+  <!-- ios -->
+
+  <!-- google chrome -->
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <link rel="manifest" href="favicons/manifest.json">
+  <!-- android -->
+  <meta name="theme-color" content="#ffffff">
+  <!-- android -->
+
+  <!-- open graph  -->
+  <!--
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Favicons for Node.js" />
+  <meta property="og:url" content="http://favicons.io" />
+  <meta property="og:description" content="A Node.js module for generating favicons and their associated files. Originally built for Google's Web Starter Kit and Catalyst." />
+  <meta property="og:image" content="http://favicons.io/demo.png" />
+  <meta property="og:locale" content="en_US" />
+  -->
+
+  <!-- twitter -->
+  <!--
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:site" content="@haydenbleasel" />
+  <meta property="twitter:title" content="Favicons for Node.js" />
+  <meta property="twitter:description" content="A Node.js module for generating favicons and their associated files. Originally built for Google's Web Starter Kit and Catalyst." />
+  <meta property="twitter:image" content="http://favicons.io/demo.png" />
+  <meta property="twitter:url" content="http://favicons.io/demo.png" />
+  -->
+
+  <!--
+  <link rel="icon" href="favicon.ico" />
+  <link rel="author" href="humans.txt" />
+  <link rel="canonical" href="http://favicons.io" />
+  <link rel="sitemap" href="sitemap.xml" />
+  -->
+
+  <!-- stylesheet -->
+
   <link rel="stylesheet" href="css/styles.css">
-  <meta name="viewport" content="width=device-width">
-  <!--[if lt IE 9]>
+
+  <!-- ie -->
+
+  <!--
+  [if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 </head>
 
 <body>
-  <div>
-    <h1>Comming soon</h1>
-  </div>
+
+  <h1 class="coming-soon">Coming soon</h1>
+
+  <!-- <script src="bower_components/jquery/dist/jquery.js"></script> -->
   <script src="js/script.js"></script>
   <script>
-  /*
-    (function(i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r;
-      i[r] = i[r] || function() {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-      a.async = 1;
-      a.src = g;
-      m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-46014773-4', 'auto');
-    ga('send', 'pageview');
-  */
+    /*
+            (function(i, s, o, g, r, a, m) {
+              i['GoogleAnalyticsObject'] = r;
+              i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+              }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+              a.async = 1;
+              a.src = g;
+              m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+            ga('create', 'UA-46014773-4', 'auto');
+            ga('send', 'pageview');
+          */
+    (function() {
+      console.log('ready');
+    })();
   </script>
 
 </body>
