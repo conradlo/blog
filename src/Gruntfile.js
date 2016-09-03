@@ -23,7 +23,7 @@ module.exports = function (grunt) {
         }
       },
       css: {
-        files: ['./css/**/*.scss'],
+        files: ['<%= compass.dist.options.sassPath %>/*.scss'],
         tasks: ['compass'],
         options: {
           interrupt: true,
@@ -34,9 +34,26 @@ module.exports = function (grunt) {
       server: {
         options: {
           port: 8000,
-          hostname: '*',
-          open: true,
+          hostname: 'slo.local',
           debug: true
+        }
+      }
+    },
+    browserSync: {
+      dev: {
+        bsFiles: {
+          src: [
+            './css/*.css',
+            './js/*.js',
+            './index.html'
+          ]
+        },
+        options: {
+          watchTask: true,
+          open: 'external',
+          host: '<%= connect.server.options.hostname %>',
+          proxy: 'http://<%= connect.server.options.hostname %>:<%= connect.server.options.port %>',
+          port: '<%= connect.server.options.port %>'
         }
       }
     }
@@ -48,7 +65,8 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-browser-sync');
 
   // default task
-  grunt.registerTask('default', ['connect', 'watch']);
+  grunt.registerTask('default', ['connect', 'browserSync', 'watch']);
 };
