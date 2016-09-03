@@ -7,7 +7,8 @@ module.exports = function (grunt) {
         options: {
           cacheDir: './css/.sass-cache',
           cssDir: './css',
-          sassPath: './css/sass'
+          sassPath: './css/sass',
+          imagesDir: 'img/'
         }
       }
     },
