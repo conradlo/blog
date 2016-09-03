@@ -1,0 +1,6 @@
+# directories for local development
+asset/
+src/css/.sass-cache
+
+# node related
+src/node_modules/
