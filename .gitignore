@@ -1,6 +1,7 @@
 # directories for local development
 asset/
 src/css/.sass-cache
+src/bower_components
 
 # node related
 src/node_modules/
