@@ -1,10 +1,12 @@
+// compass resource
 @import "compass/reset";
 @import "compass/css3";
 
 body {
   // background
   background-color: #ffffff;
-  background-image: image-url("ricepaper2.png");
+  // background-image: url($ricepaper2);
+  background-image: inline-image("ricepaper2.png");
 
   // disable user select and cursor style
   cursor: default;
