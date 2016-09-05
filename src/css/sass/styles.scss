@@ -45,6 +45,9 @@ body {
   @media (#{$bp-larger-than-phablet}) {
     font-size: 1.2em;
   }
+  .dud {
+    color: rgba(77, 77, 77, 0.5);
+  }
 }
 .motto-row {
     display: none;
@@ -81,5 +84,5 @@ body {
     // background-color: rgba(153, 153, 255, 0.5);
 }
 .container {
-    padding: 0;
+    padding: 0; // override skeleton's default
 }

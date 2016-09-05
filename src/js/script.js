@@ -8,3 +8,7 @@ window.onload = function () {
 document.addEventListener("touchmove", function (event) {
   event.preventDefault();
 }, false);
+
+(function() {
+  console.log('ready');
+})();

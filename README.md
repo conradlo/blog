@@ -20,3 +20,12 @@ https://codepen.io/ShawnGrav/pen/ZYVada
 https://codepen.io/OfficialAntarctica/pen/bpxgWZ
 https://codepen.io/Gthibaud/pen/GJeLzv
 https://codepen.io/devcodetips/pen/LGRJEo
+
+
+https://codepen.io/yoannhel/pen/sJpDj
+https://codepen.io/soulwire/pen/mErPAK
+https://codepen.io/Tbgse/pen/dYaJyJ
+https://codepen.io/MyXoToD/pen/fmjbg
+https://codepen.io/quietcodes/pen/wBLPxy
+
+https://codepen.io/fbrz/pen/bNdMwZ
