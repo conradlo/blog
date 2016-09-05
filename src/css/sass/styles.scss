@@ -1,9 +1,6 @@
 // compass
-@import "compass/css3";
-// skeleton
+@import "compass/css3"; // skeleton
 @import "vendor/skeleton/skeleton";
-// coming soon only
-@import "res/coming_soon";
 body {
     // background
     background-color: #ffffff;
@@ -12,23 +9,46 @@ body {
     cursor: default;
     @include user-select(none);
 }
-.fullscreen {
-    position: absolute;
-    width: 100%;
+.app {
+    display: block;
     height: auto;
-    bottom: 0;
+    position: absolute;
     top: 0;
     left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 24px;
+    // background-color: rgba(255, 255, 153, 0.5);
+    @media (#{$bp-larger-than-phablet}) {
+      margin: 24px 0;
+    }
 }
-$center_text_box_width: 320px;
-$center_text_box_height: 64px;
-.center-text {
-    position: absolute;
-    width: $center_text_box_width;
-    height: $center_text_box_height;
+.main {
+    // background-color: rgba(204, 255, 153, 0.5);
+    height: 100%;
+}
+.name-row {
+  @media (#{$bp-larger-than-phablet}) {
+    // background-color: rgba(153, 255, 255, 1);
+    // padding-top: 40%;
+    position: relative;
     top: 50%;
-    left: 50%;
-    margin-left: -$center_text_box_width/2;
-    margin-top: -$center_text_box_height/2;
-    text-align: center;
+    @include transform(translateY(-100%));
+  }
+}
+.motto-row {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    float: right;
+}
+.motto-container {
+    text-align: right;
+}
+.column,
+.columns {
+    // background-color: rgba(153, 153, 255, 0.5);
+}
+.container {
+    padding: 0;
 }
