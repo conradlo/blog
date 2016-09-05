@@ -1,5 +1,7 @@
 // compass
-@import "compass/css3"; // skeleton
+@import "compass/css3";
+
+// skeleton
 @import "vendor/skeleton/skeleton";
 body {
     // background
@@ -42,12 +44,23 @@ body {
     }
 }
 .tag-row {
+  padding: 0 2px;
   @media (#{$bp-larger-than-phablet}) {
+    padding: 0 4px;
     font-size: 1.2em;
   }
-  .dud {
+  .scrambling-text {
     color: rgba(77, 77, 77, 0.5);
   }
+}
+.tag-heart {
+  display: inline-block;
+  margin: -2px 2px 0;
+  width: 1em;
+  height: 1em;
+  background-image: inline-image("heart.svg");
+  background-repeat: no-repeat;
+  vertical-align:middle;
 }
 .motto-row {
     display: none;

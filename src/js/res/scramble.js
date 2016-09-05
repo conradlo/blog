@@ -68,7 +68,7 @@
             char = this.randomChar();
             this.queue[i].char = char;
           }
-          output += '<span class="dud">' + char + '</span>';
+          output += '<span class="scrambling-text">' + char + '</span>';
         } else {
           output += from;
         }
@@ -94,14 +94,23 @@
   // ——————————————————————————————————————————————————
 
   var phrases = [
+    // work & skills
     'coding',
     'elegant design',
-    'ios',
-    'android',
+    'mobile app development',
     'web technology',
-    'solving problem',
-    'building product',
-    'design thinking'
+    'delightful UX',
+    'front end development',
+    // mind set
+    'building amazing products',
+    'solving problems',
+    'design thinking',
+    // life and peronality
+    'being cool',
+    'trending technologies',
+    'rock climbing',
+    'music',
+    'food',
   ];
 
   var el = document.querySelector('.scramble-text');
