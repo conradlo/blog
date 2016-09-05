@@ -68,23 +68,24 @@ module.exports = function (grunt) {
     },
     copy: {
       // https://github.com/gruntjs/grunt-contrib-copy
-      main: {
+      stage: {
         files: [{
           expand: true,
           src: ['favicons/**', 'img/**'],
+          dest: '../stage'
+        }]
+      },
+      production: {
+        files: [{
+          expand: true,
+          src: ['favicons/**'],
           dest: '../'
         }, {
           expand: true,
-          src: 'css/styles.css',
-          dest: '../'
-        }, {
-          expand: true,
-          src: 'js/script.js',
-          dest: '../'
-        }, {
-          expand: true,
-          src: 'index.html',
-          dest: '../'
+          src: '../stage/index.html',
+          dest: '../',
+          flatten: true,
+          filter: 'isFile'
         }]
       }
     },
@@ -134,9 +135,9 @@ module.exports = function (grunt) {
   // default task
   grunt.registerTask('default', ['connect', 'browserSync', 'watch']);
 
-  // build task for production
-  // grunt.registerTask('build', ['copy', 'htmlmin']);
-
   // staging
-  grunt.registerTask('stage', ['inline:stage', 'htmlmin:stage']);
+  grunt.registerTask('stage', ['copy:stage', 'inline:stage', 'htmlmin:stage']);
+
+  // build task for production
+  grunt.registerTask('build', ['copy:production']);
 };
