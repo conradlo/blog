@@ -1,0 +1,53 @@
+.bubbles {
+    > .particle {
+        opacity: 0;
+        position: absolute;
+        background-color: rgba(141, 117, 215, 0.5);
+        animation: bubbles 3s ease-in infinite;
+        border-radius: 100%;
+    }
+}
+@keyframes bubbles {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        //show and hint at moving
+        opacity: 1;
+        transform: translate(0, -20%);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0, -1000%); //Big bubbles move faster
+    }
+}
+// .particles > .particle {
+//   border-radius: 100%;
+//   background: transparent;
+//
+//   position: absolute;
+//
+//   background-size: 100% 100%;
+//   background-repeat: no-repeat;
+//
+//   &.smaller {
+//     width: 5px;
+//     height: 5px;
+//   }
+//   &.small {
+//     width: 10px;
+//     height: 10px;
+//   }
+//   &.normal {
+//     width: 15px;
+//     height: 15px;
+//   }
+//   &.big {
+//     width: 20px;
+//     height: 20px;
+//   }
+//   &.bigger {
+//     width: 25px;
+//     height: 25px;
+//   }
+// }
