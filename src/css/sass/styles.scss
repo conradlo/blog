@@ -20,7 +20,7 @@ body {
     margin: 24px;
     // background-color: rgba(255, 255, 153, 0.5);
     @media (#{$bp-larger-than-phablet}) {
-      margin: 24px 0;
+        margin: 24px 0;
     }
 }
 .main {
@@ -28,23 +28,54 @@ body {
     height: 100%;
 }
 .name-row {
+    padding-top: 1em;
+    @media (#{$bp-larger-than-phablet}) {
+        // background-color: rgba(153, 255, 255, 1);
+        // padding-top: 40%;
+        position: relative;
+        top: 50%;
+        @include transform(translateY(-100%));
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+}
+.tag-row {
   @media (#{$bp-larger-than-phablet}) {
-    // background-color: rgba(153, 255, 255, 1);
-    // padding-top: 40%;
-    position: relative;
-    top: 50%;
-    @include transform(translateY(-100%));
+    font-size: 1.2em;
   }
 }
 .motto-row {
+    display: none;
+    @media (#{$bp-larger-than-phablet}) {
+        display: initial;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        float: right;
+    }
+    .motto-container {
+      text-align: right;
+      font-size: 1em;
+    }
+}
+.motto-row-mobile {
+    display: initial;
     position: absolute;
     bottom: 0;
     width: 100%;
     float: right;
+    @media (#{$bp-larger-than-phablet}) {
+        display: none;
+    }
+    .motto-container {
+      text-align: right;
+      font-size: 1.6em;
+      line-height: 1em;
+    }
 }
-.motto-container {
-    text-align: right;
-}
+
 .column,
 .columns {
     // background-color: rgba(153, 153, 255, 0.5);
