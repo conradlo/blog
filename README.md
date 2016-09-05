@@ -15,3 +15,8 @@ https://developer.yahoo.com/performance/rules.html
 
 http://dataurl.net/
 http://stackoverflow.com/a/6046962
+
+https://codepen.io/ShawnGrav/pen/ZYVada
+https://codepen.io/OfficialAntarctica/pen/bpxgWZ
+https://codepen.io/Gthibaud/pen/GJeLzv
+https://codepen.io/devcodetips/pen/LGRJEo

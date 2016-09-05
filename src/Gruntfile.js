@@ -8,9 +8,10 @@ module.exports = function (grunt) {
         options: {
           outputStyle: 'compressed',
           noLineComments: true,
-          cacheDir: './css/.sass-cache',
-          cssDir: './css',
-          sassPath: './css/sass',
+          cacheDir: 'css/.sass-cache/',
+          cssDir: 'css/',
+          sassDir: 'css/sass/',
+          specify: 'css/sass/styles.scss',
           imagesDir: 'img/'
         }
       }
@@ -29,7 +30,7 @@ module.exports = function (grunt) {
         }
       },
       css: {
-        files: ['<%= compass.dist.options.sassPath %>/*.scss'],
+        files: ['<%= compass.dist.options.sassDir %>/*.scss'],
         tasks: ['compass'],
         options: {
           interrupt: true,
@@ -97,6 +98,24 @@ module.exports = function (grunt) {
         files: {
           '../index.html': '../index.html'
         }
+      },
+      stage: {
+        options: {
+          removeComments: true,
+          collapseWhitespace: true
+        },
+        files: {
+          '../stage/index.html': '../stage/index.html'
+        }
+      }
+    },
+    inline: {
+      stage: {
+        options:{
+          uglify: true
+        },
+        src: './index.html',
+        dest: '../stage/index.html'
       }
     }
   };
@@ -110,11 +129,14 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
+  grunt.loadNpmTasks('grunt-inline');
 
   // default task
   grunt.registerTask('default', ['connect', 'browserSync', 'watch']);
 
-  // build task
+  // build task for production
   // grunt.registerTask('build', ['copy', 'htmlmin']);
 
+  // staging
+  grunt.registerTask('stage', ['inline:stage', 'htmlmin:stage']);
 };
