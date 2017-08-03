@@ -2,32 +2,21 @@
 (function () {
   "use strict";
 
-  function _classCallCheck(instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  }
-
-  // ——————————————————————————————————————————————————
   // TextScramble
-  // ——————————————————————————————————————————————————
-
   var TextScramble = function () {
     function TextScramble(el) {
-      _classCallCheck(this, TextScramble);
-
       this.el = el;
       this.chars = 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM!<>-_\\/[]{}—=+*^?#________';
       this.update = this.update.bind(this);
     }
 
-    TextScramble.prototype.setText = function setText(newText) {
-      var _this = this;
+    TextScramble.prototype.setText = function(newText) {
+      var that = this;
 
       var oldText = this.el.innerText;
       var length = Math.max(oldText.length, newText.length);
       var promise = new Promise(function (resolve) {
-        _this.resolve = resolve;
+        that.resolve = resolve;
         return resolve;
       });
       this.queue = [];
@@ -82,16 +71,12 @@
       }
     };
 
-    TextScramble.prototype.randomChar = function randomChar() {
+    TextScramble.prototype.randomChar = function() {
       return this.chars[Math.floor(Math.random() * this.chars.length)];
     };
 
     return TextScramble;
   }();
-
-  // ——————————————————————————————————————————————————
-  // Example
-  // ——————————————————————————————————————————————————
 
   var phrases = [
     // work & skills
@@ -113,12 +98,12 @@
     'food',
   ];
 
-  var el = document.querySelector('.scramble-text');
-  var fx = new TextScramble(el);
+  var element = document.querySelector('.scramble-text');
+  var textScrambleObj = new TextScramble(element);
 
   var counter = 0;
   var next = function next() {
-    fx.setText(phrases[counter]).then(function () {
+    textScrambleObj.setText(phrases[counter]).then(function () {
       setTimeout(next, 2000);
     });
     counter = (counter + 1) % phrases.length;

@@ -11,4 +11,5 @@ document.addEventListener("touchmove", function (event) {
 
 (function() {
   console.log('ready');
+  console.log(navigator.userAgent);
 })();
