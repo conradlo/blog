@@ -3,6 +3,9 @@
 
 // skeleton
 @import "vendor/skeleton/skeleton";
+
+$tint-color: #D75A4A;
+
 body {
     // background
     background-color: #ffffff;
@@ -10,6 +13,13 @@ body {
     // disable user select and cursor style
     cursor: default;
     @include user-select(none);
+}
+a {
+    text-decoration: none;
+    color: $font-color;
+    &:hover {
+        color: $tint-color;
+    }
 }
 .app {
     display: block;
