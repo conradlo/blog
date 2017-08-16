@@ -3,11 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
+title: title
+subtitle: subtitle
+description: description
 author: Conrad Lo
-language: en
+language:
+  - zh-tw
 timezone:
 
 # URL
