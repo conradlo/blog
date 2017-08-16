@@ -1,11 +1,11 @@
 # directories for local development
-src/asset/
-src/css/.sass-cache
-src/bower_components
+_src/asset/
+_src/css/.sass-cache
+_src/bower_components
 
 # node related
-src/node_modules/
+_src/node_modules/
 
 # test blog
-src/blog/
-stage/blog/
+_src/blog/
+_stage/blog/
