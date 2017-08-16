@@ -73,7 +73,11 @@ module.exports = function (grunt) {
           expand: true,
           src: ['favicons/**'],
           dest: '../stage'
-        }]
+        },{
+          expand: true,
+          src: ['blog/**'],
+          dest: '../stage'
+      }]
         // grunt-inline will copy and inline the develop version of 'index.html'
       },
       production: {
@@ -81,7 +85,11 @@ module.exports = function (grunt) {
           expand: true,
           src: ['favicons/**'],
           dest: '../'
-        }, {
+        },{
+          expand: true,
+          src: ['blog/**'],
+          dest: '../'
+        },{
           expand: true,
           src: '../stage/index.html',
           dest: '../',

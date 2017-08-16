@@ -5,3 +5,7 @@ src/bower_components
 
 # node related
 src/node_modules/
+
+# test blog
+src/blog/
+stage/blog/
