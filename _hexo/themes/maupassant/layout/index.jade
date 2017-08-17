@@ -12,7 +12,10 @@ block content
     .post
       h1.post-title
         include _partial/helpers
-        a(href=url_for(post.path))
+        if post.excerpt
+          a(href=url_for(post.path))
+            +title(post)
+        else
           +title(post)
       .post-meta= post.date.format(config.date_format)
       if theme.disqus
@@ -21,29 +24,35 @@ block content
         a.ds-thread-count(href=url_for(post.path) + '#SOHUCS')
           span.cy_cmt_count(id='sourceId::' + post.date.valueOf() style='margin: 0 3px 0 1px;') 0
           span= ' ' + __('Comment')
-      if post.description
-        .post-content
-          != post.description
-      else if post.excerpt
+      //- if post.description
+      //-   .post-content
+      //-     != post.description
+      //- else if post.content
+      //-   - var br = 0
+      //-   - for (var i = 0; i < 5; ++i) {
+      //-     - br = post.content.indexOf('\n',br+1)
+      //-     if br<0
+      //-       - break
+      //-     if br >150
+      //-       - break
+      //-   - }
+      //-   if br < 0
+      //-     .post-content
+      //-       != post.content
+      //-   else
+      //-     .post-content
+      //-       != post.content.substring(0, br)
+      //- p(class='readmore')
+      //-   a(href=url_for(post.path))= __('Readmore')
+      if post.excerpt
         .post-content
           != post.excerpt
+        p(class='readmore')
+          a(href=url_for(post.path))= __('Readmore')
       else if post.content
-        - var br = 0
-        - for (var i = 0; i < 5; ++i) {
-          - br = post.content.indexOf('\n',br+1)
-          if br<0
-            - break
-          if br >150
-            - break
-        - }
-        if br < 0
-          .post-content
-            != post.content
-        else
-          .post-content
-            != post.content.substring(0, br)
-      p(class='readmore')
-        a(href=url_for(post.path))= __('Readmore')
+        //- render full article
+        .post-content
+          != post.content
 
   include _partial/paginator
   if theme.disqus
