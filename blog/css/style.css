@@ -34,6 +34,9 @@ body {
 .content_container {
   padding-right: 50px;
   padding-top: 20px; }
+  .content_container hr {
+    border: none;
+    border-top: 1px solid #ddd; }
 
 a, button.submit {
   color: #6E7173;
