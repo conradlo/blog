@@ -44,15 +44,16 @@ block content
       //-       != post.content.substring(0, br)
       //- p(class='readmore')
       //-   a(href=url_for(post.path))= __('Readmore')
-      if post.excerpt
+      if post.description
         .post-content
-          != post.excerpt
+          != post.description
         p(class='readmore')
           a(href=url_for(post.path))= __('Readmore')
       else if post.content
         //- render full article
         .post-content
           != post.content
+    hr
 
   include _partial/paginator
   if theme.disqus
