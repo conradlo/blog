@@ -3,12 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: title
-subtitle: subtitle
-description: description
+title: blog / conradlo.com
+subtitle: think like a geek, express like an artist.
+description:
 author: Conrad Lo
 language:
-  - zh-tw
+  - en
+  - zh-TW
 timezone:
 
 # URL
