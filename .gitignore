@@ -2,6 +2,7 @@
 _src/asset/
 _src/css/.sass-cache
 _src/bower_components
+_src/favicons/src/export/
 
 # node related
 _src/node_modules/
