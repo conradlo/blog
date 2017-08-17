@@ -2,10 +2,10 @@ extends base
 - var current_title = page.title || tag.name || category.name || site.title
 
 block title
-  if config.subtitle
-    title= config.title + ' | ' + config.subtitle
-  else
-    title= config.title
+  //- if config.subtitle
+  //-   title= config.title + ' | ' + config.subtitle
+  //- else
+  title= config.title
 block content
 
   for post in page.posts.toArray()
@@ -44,15 +44,16 @@ block content
       //-       != post.content.substring(0, br)
       //- p(class='readmore')
       //-   a(href=url_for(post.path))= __('Readmore')
-      if post.excerpt
+      if post.description
         .post-content
-          != post.excerpt
+          != post.description
         p(class='readmore')
           a(href=url_for(post.path))= __('Readmore')
       else if post.content
         //- render full article
         .post-content
           != post.content
+    hr
 
   include _partial/paginator
   if theme.disqus

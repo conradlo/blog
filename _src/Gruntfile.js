@@ -72,11 +72,11 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           src: ['favicons/**'],
-          dest: '../stage'
+          dest: '../_stage'
         },{
           expand: true,
           src: ['blog/**'],
-          dest: '../stage'
+          dest: '../_stage'
       }]
         // grunt-inline will copy and inline the develop version of 'index.html'
       },

@@ -23,5 +23,8 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-inline": "^0.3.6",
     "nodemon": "^1.10.2"
+  },
+  "dependencies": {
+    "favicons": "^4.8.6"
   }
 }
