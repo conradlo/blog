@@ -13,9 +13,11 @@ with `html`, `button`, `input`, `select`, and `textarea`. Pure Grids use
 specific font stacks to ensure the greatest OS/browser compatibility.
 */
 $tint-color: #D75A4A;
-
+$hyber-link-blue: #01579f;
 $light-grey: #999;
 $grey: #444;
+
+$link-color: $tint-color;
 
 html, button, input, select, textarea,
 .MJXc-TeX-unknown-R,
@@ -298,7 +300,7 @@ div {
                 background: #f7f8f8;
             }
             a {
-                color: #01579f;
+                color: $link-color;
                 padding-bottom: 2px;
                 // word-break: break-all;
                 &:hover {
@@ -339,7 +341,7 @@ div {
                 background: #f7f8f8;
             }
             a {
-                color: #01579f;
+                color: $link-color;
                 padding-bottom: 2px;
                 // word-break: break-all;
                 &:hover {
@@ -383,7 +385,7 @@ div {
 }
 
 .page-navigator {
-    border-top: 1px solid #ddd;
+    // border-top: 1px solid #ddd;
     list-style: none;
     margin-top: 25px;
     padding: 25px 0 0;
@@ -398,11 +400,11 @@ div {
         height: 25px;
         line-height: 25px;
         padding: 5px 9px;
-        border: 1px solid #DDD;
+        // border: 1px solid #DDD;
         text-align: center;
         &:hover {
-            background: #F8F8F8;
-            border-bottom-color: $tint-color;
+            // background: #F8F8F8;
+            color: $tint-color;
         }
         &.prev {
             float: left;
@@ -422,8 +424,14 @@ div {
         }
     }
     .current {
-        background: #F8F8F8;
+        // background: #F8F8F8;
+        border-bottom: 1px solid;
         border-bottom-color: $tint-color;
+        color: #6E7173;
+        &:hover {
+            // background: #F8F8F8;
+            color: #6E7173;
+        }
     }
     .space {
         border: none;
@@ -877,11 +885,11 @@ pre {
 /* read more*/
 .readmore a {
     font-size: 14px;
-    color: $grey;
+    color: $link-color;
     margin: -10px 0;
     padding: 5px 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    // border: 1px solid #ddd;
+    // border-radius: 5px;
     float: right;
     &:after {
         font-family: "FontAwesome";
@@ -944,7 +952,7 @@ figure.highlight,
 
         a {
             float: right;
-            color: #01579f;
+            color: $link-color;
         }
     }
     // Gutter which contains line numbers
@@ -1726,7 +1734,7 @@ p.search-result {
 em.search-keyword {
   font-weight: bold;
   font-style: normal;
-  color: #01579f;
+  color: $link-color;
 }
 
 /* Disqus Button */

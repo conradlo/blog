@@ -222,8 +222,7 @@ div {
     color: #444;
     padding-top: 15px;
     text-align: justify;
-    text-justify: distribute;
-    word-break: break-all; }
+    text-justify: distribute; }
     .post .post-content h2 {
       margin: 1.4em 0 1.1em;
       border-bottom: 1px solid #eee;
@@ -240,9 +239,8 @@ div {
         padding: 0 5px;
         background: #f7f8f8; }
       .post .post-content p a {
-        color: #01579f;
-        padding-bottom: 2px;
-        word-break: break-all; }
+        color: #D75A4A;
+        padding-bottom: 2px; }
         .post .post-content p a:hover {
           text-decoration: underline; }
     .post .post-content .caption {
@@ -273,11 +271,28 @@ div {
         padding: 0px 5px;
         background: #f7f8f8; }
       .post .post-content ul a, .post .post-content ol a {
-        color: #01579f;
-        padding-bottom: 2px;
-        word-break: break-all; }
+        color: #D75A4A;
+        padding-bottom: 2px; }
         .post .post-content ul a:hover, .post .post-content ol a:hover {
           text-decoration: underline; }
+    .post .post-content .video-container {
+      width: 100%;
+      /* whatever width you want */
+      display: inline-block;
+      position: relative; }
+      .post .post-content .video-container:after {
+        padding-top: 56.25%;
+        /* 16:9 ratio */
+        display: block;
+        content: ''; }
+      .post .post-content .video-container iframe {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
   .post .tags {
     padding-bottom: 1em; }
     .post .tags a {
@@ -288,7 +303,6 @@ div {
         padding-right: 0.3em; }
 
 .page-navigator {
-  border-top: 1px solid #ddd;
   list-style: none;
   margin-top: 25px;
   padding: 25px 0 0;
@@ -302,11 +316,9 @@ div {
     height: 25px;
     line-height: 25px;
     padding: 5px 9px;
-    border: 1px solid #DDD;
     text-align: center; }
     .page-navigator a:hover, .page-navigator span:hover {
-      background: #F8F8F8;
-      border-bottom-color: #D75A4A; }
+      color: #D75A4A; }
     .page-navigator a.prev, .page-navigator span.prev {
       float: left; }
       .page-navigator a.prev:before, .page-navigator span.prev:before {
@@ -320,8 +332,11 @@ div {
         content: "\f101";
         padding-left: 0.3em; }
   .page-navigator .current {
-    background: #F8F8F8;
-    border-bottom-color: #D75A4A; }
+    border-bottom: 1px solid;
+    border-bottom-color: #D75A4A;
+    color: #6E7173; }
+    .page-navigator .current:hover {
+      color: #6E7173; }
   .page-navigator .space {
     border: none;
     padding: 5px 5px; }
@@ -737,11 +752,9 @@ pre {
 /* read more*/
 .readmore a {
   font-size: 14px;
-  color: #444;
+  color: #D75A4A;
   margin: -10px 0;
   padding: 5px 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
   float: right; }
   .readmore a:after {
     font-family: "FontAwesome";
@@ -797,7 +810,7 @@ figure.highlight,
     figure.highlight figcaption a,
     .codeblock figcaption a {
       float: right;
-      color: #01579f; }
+      color: #D75A4A; }
   figure.highlight .gutter,
   .codeblock .gutter {
     background: #f7f8f8;
@@ -1435,7 +1448,7 @@ p.search-result {
 em.search-keyword {
   font-weight: bold;
   font-style: normal;
-  color: #01579f; }
+  color: #D75A4A; }
 
 /* Disqus Button */
 .disqus_click_btn {
