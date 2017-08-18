@@ -1475,3 +1475,8 @@ em.search-keyword {
   color: #fff;
   background-color: #999;
   text-shadow: 0; }
+
+/* twitter widget */
+.post-content > twitterwidget {
+  margin-left: auto;
+  margin-right: auto; }
