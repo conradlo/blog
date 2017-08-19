@@ -244,10 +244,11 @@ div {
         .post .post-content p a:hover {
           text-decoration: underline; }
     .post .post-content .caption {
-      color: #444;
+      color: #999;
       display: block;
       font-size: 0.9em;
       margin-top: 0.1em;
+      margin-bottom: 1.234em;
       position: relative;
       text-align: center; }
     .post .post-content hr {
