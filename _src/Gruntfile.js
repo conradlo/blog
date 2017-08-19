@@ -69,11 +69,13 @@ module.exports = function (grunt) {
     copy: {
       // https://github.com/gruntjs/grunt-contrib-copy
       stage: {
-        files: [{
-          expand: true,
-          src: ['favicons/**'],
-          dest: '../_stage'
-        },{
+        files: [
+        // {
+        //   expand: true,
+        //   src: ['favicons/**'],
+        //   dest: '../_stage'
+        // },
+        {
           expand: true,
           src: ['blog/**'],
           dest: '../_stage'
@@ -82,10 +84,6 @@ module.exports = function (grunt) {
       },
       production: {
         files: [{
-          expand: true,
-          src: ['favicons/**'],
-          dest: '../'
-        },{
           expand: true,
           src: ['blog/**'],
           dest: '../'
