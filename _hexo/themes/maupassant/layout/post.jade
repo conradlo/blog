@@ -3,6 +3,15 @@ extends base
 block title
   title= page.title + ' | ' + config.title
 
+block social_share
+  //- twitter
+  meta(name='twitter:site', content=config.twitter_handle)
+  meta(name='twitter:title', content=page.title)
+  if page.header_image_path
+    meta(name='twitter:card', content='summary_large_image')
+    meta(name='twitter:image', content=page.header_image_path)
+  if page.social_share_description
+    meta(name='twitter:description', content=page.social_share_description)
 block content
   .post
     h1.post-title= page.title

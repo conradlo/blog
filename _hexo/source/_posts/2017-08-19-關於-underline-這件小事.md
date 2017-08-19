@@ -10,6 +10,8 @@ description: '<p>日常生活中，有多少設計是我們從來沒有注意過
 </blockquote>
 <p>記得多年前在 medium 上閱讀過 Marcin Wichary 寫的這篇 <a href="https://medium.design/crafting-link-underlines-on-medium-7c03a9274f9" target="_blank" rel="external">Crafting link underlines on Medium</a>。</p>
 <p>單是標題就已經很吸引人。</p>'
+header_image_path: "/blog/2017/08/19/關於-underline-這件小事/Screenshot%202017-08-19%2015.52.12.png"
+social_share_description: "日常生活中，有多少設計是我們從來沒有注意過，我們會覺得它的存在是那麼的理所當然。然而一旦它消失了，便即發現它的重要性。"
 ---
 
 
