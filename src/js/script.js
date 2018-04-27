@@ -10,6 +10,6 @@ document.addEventListener("touchmove", function (event) {
 }, false);
 
 (function() {
-  console.log('ready');
-  console.log(navigator.userAgent);
+  // console.log('ready');
+  // console.log(navigator.userAgent);
 })();

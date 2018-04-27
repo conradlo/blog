@@ -6,7 +6,7 @@
   var TextScramble = function () {
     function TextScramble(el) {
       this.el = el;
-      this.chars = 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM!<>-_\\/[]{}—=+*^?#________';
+      this.chars = 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM!<>-_\\/[]{}—=+*^?#________金木水火土日月手口人心女一あおえいうたかけくきこまめむみもさしすせそ';
       this.update = this.update.bind(this);
     }
 
@@ -86,6 +86,7 @@
     'web technology',
     'delightful UX',
     'front end development',
+    'software engineering',
     // mind set
     'building amazing products',
     'solving problems',
@@ -93,7 +94,6 @@
     // life and peronality
     'being cool',
     'trending technologies',
-    'rock climbing',
     'music',
     'food',
   ];
