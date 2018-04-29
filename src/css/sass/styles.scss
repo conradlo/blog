@@ -29,10 +29,10 @@ a {
     left: 0;
     bottom: 0;
     right: 0;
-    margin: 24px;
+    /* margin: 24px; */
     // background-color: rgba(255, 255, 153, 0.5);
     @media (#{$bp-larger-than-phablet}) {
-        margin: 24px 0;
+        /* margin: 24px 0; */
     }
 }
 .main {
@@ -109,4 +109,19 @@ a {
 }
 .container {
     padding: 0; // override skeleton's default
+}
+
+.panel {
+    height: 100%;
+    width: 100%;
+}
+
+// http://scrollmagic.io/examples/basic/section_wipes_natural.html
+$colors: (Blossom Pink, Thistle, LightPink, Lavender, LightSkyBlue);
+$i: 1;
+@each $color in $colors {
+    .app > div:nth-child(#{$i}) {
+        background-color: #{$color};
+    }
+    $i: $i + 1;
 }
