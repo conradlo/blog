@@ -4,9 +4,14 @@ src/css/.sass-cache
 src/css/styles.css
 src/bower_components
 src/favicons/src/export/
+dist/
 
 # node related
-src/node_modules/
+node_modules/
+package-lock.json
+
+# yarn
+yarn.lock
 
 # test blog
 src/blog/
