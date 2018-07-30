@@ -4,7 +4,7 @@ src/css/.sass-cache
 src/css/styles.css
 src/bower_components
 src/favicons/src/export/
-dist/
+build/
 
 # node related
 node_modules/
