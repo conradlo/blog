@@ -1,3 +1,3 @@
 module.exports = {
-  extends: 'react-tools',
+  extends: ['eslint:recommended', 'react-tools'],
 }
