@@ -1,7 +1,7 @@
 import React from 'react'
 import { withSiteData, Link } from 'react-static'
 import TextScramble from './scramble';
-import './skeleton.css';
+import './skeleton.scss';
 import './style.scss'
 
 export default withSiteData(() => (
@@ -20,7 +20,7 @@ export default withSiteData(() => (
     <div className="row motto-row">
         <div className="offset-by-two-thirds one-third column">
             <div className="motto-container">
-                <a href="/blog">think like a geek, express like an artist</a>
+                think like a geek, express like an artist
             </div>
         </div>
     </div>
@@ -28,7 +28,7 @@ export default withSiteData(() => (
     <div className="row motto-row-mobile">
         <div className="offset-by-one-half one-half column">
             <div className="motto-container">
-                <Link to="/blog">think like a geek<br/>express like an artist</Link>
+                think like a geek<br/>express like an artist
             </div>
         </div>
     </div>
