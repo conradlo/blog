@@ -36,6 +36,9 @@ export default {
       },
     ]
   },
+  paths: {
+    dist: 'docs', // The production output directory.
+  },
   webpack: (config, { defaultLoaders, stage }) => {
     let loaders = []
 
