@@ -1,0 +1,112 @@
+
+/* Larger than mobile */
+$mobild-max-width: 400px;
+$phablet-max-width: 550px;
+$tablet-max-width: 750px;
+$desktop-max-width: 1000px;
+$desktop-max-width: 1200px;
+$tint-color: #D75A4A;
+$font-color: #222;
+
+body {
+    // background
+    background-color: #ffffff;
+    background-image: inline-image("ricepaper2_min.png");
+    // disable user select and cursor style
+    cursor: default;
+    user-select: none;
+}
+a {
+    text-decoration: none;
+    color: $font-color;
+    &:hover {
+        color: $tint-color;
+    }
+}
+.app {
+    display: block;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.main {
+    height: 100%;
+}
+.name-row {
+    padding-top: 1em;
+    @media (min-width: $phablet-max-width) {
+        position: relative;
+        top: 50%;
+        transform: translateY(-100%);
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+}
+.tag-row {
+  padding: 0 2px;
+  @media (max-width: $phablet-max-width) {
+    padding: 0 4px;
+    font-size: 1.2em;
+  }
+  .scrambling-text, {
+    color: rgba(77, 77, 77, 0.5);  
+    padding: 0 4px;
+  }
+  .scramble-text {
+    padding: 0 4px;
+  }
+}
+.tag-heart {
+  display: inline-block;
+  margin: -2px 2px 0;
+  width: 1em;
+  height: 1em;
+  background-image: url("./heart.svg");
+  background-repeat: no-repeat;
+  vertical-align:middle;
+}
+.motto-row {
+    display: none;
+    @media (min-width: $phablet-max-width) {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        float: right;
+        padding-bottom: 2rem;
+    }
+    .motto-container {
+      text-align: right;
+      font-size: 1em;
+    }
+}
+.motto-row-mobile {
+    display: initial;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    float: right;
+    padding-bottom: 2rem;
+    @media (min-width: $phablet-max-width) {
+        display: none;
+    }
+    .motto-container {
+      text-align: right;
+      font-size: 1.6em;
+      line-height: 1em;
+    }
+}
+
+.container {
+    padding: 0; // override skeleton's default
+}
+
+.panel {
+    height: 100%;
+    width: 100%;
+}
