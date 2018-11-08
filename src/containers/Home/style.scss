@@ -53,8 +53,12 @@ a {
     padding: 0 4px;
     font-size: 1.2em;
   }
-  .scrambling-text {
-    color: rgba(77, 77, 77, 0.5);
+  .scrambling-text, {
+    color: rgba(77, 77, 77, 0.5);  
+    padding: 0 4px;
+  }
+  .scramble-text {
+    padding: 0 4px;
   }
 }
 .tag-heart {

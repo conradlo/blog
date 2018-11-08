@@ -1,4 +1,3 @@
-// source: https://codepen.io/soulwire/pen/mErPAK
 import React, { Component } from 'react'
 
 const phrases = [
@@ -21,24 +20,44 @@ const phrases = [
   'food',
 ];
 
+const chars = 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM!<>-_\\/[]{}—=+*^?#________金木水火土日月手口人心女一あおえいうたかけくきこまめむみもさしすせそ';
+
 export default class TextScramble extends Component {
   constructor(prop) {
     super(prop)
-    // this.el = el;
-    this.chars = 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM!<>-_\\/[]{}—=+*^?#________金木水火土日月手口人心女一あおえいうたかけくきこまめむみもさしすせそ';
-    this.update = this.update.bind(this);
+    this.state = {
+      counter: 0,
+      scramble: '',
+    }
+  }
+
+  componentDidMount() {
+    this.start()
+    this.queue = [];
+    this.frame = 0;
+    this.frameRequest = null;
+  }
+
+  start() {
+    const { counter } = this.state
+    this.setText(phrases[counter]);
+    this.setState({
+      counter: (counter + 1) % phrases.length
+    })
+    setTimeout(this.start.bind(this), 2000)
   }
 
   setText(newText) {
-    const that = this;
+    const { scramble } = this.state
 
-    const oldText = this.el.innerText;
+    const oldText = scramble;
     const length = Math.max(oldText.length, newText.length);
-    const promise = new Promise((resolve) => {
-      that.resolve = resolve;
-      return resolve;
-    });
+    // const promise = new Promise((resolve) => {
+    //   that.resolve = resolve;
+    //   return resolve;
+    // });
     this.queue = [];
+    this.frame = 0;
     for (let i = 0; i < length; i++) {
       const from = oldText[i] || '';
       const to = newText[i] || '';
@@ -52,60 +71,49 @@ export default class TextScramble extends Component {
       });
     }
     cancelAnimationFrame(this.frameRequest);
-    this.frame = 0;
-    this.update();
-    return promise;
+    let t = { text: '', continue: true}
+    for (; t.continue; t = this.update(this.queue, this.frame)) {
+      this.frame += 1;
+      this.frameRequest = requestAnimationFrame(() => {});
+    }
+    this.setState({ scramble: t.text });
   }
 
-  update() {
+  update(queue, frame) {
     let output = '';
     let complete = 0;
-    for (let i = 0, n = this.queue.length; i < n; i++) {
-      const _queue$i = this.queue[i];
+    for (let i = 0, n = queue.length; i < n; i++) {
+      const _queue$i = queue[i];
       const from = _queue$i.from;
       const to = _queue$i.to;
       const start = _queue$i.start;
       const end = _queue$i.end;
       let char = _queue$i.char;
 
-      if (this.frame >= end) {
+      if (frame >= end) {
         complete += 1;
         output += to;
-      } else if (this.frame >= start) {
+      } else if (frame >= start) {
         if (!char || Math.random() < 0.28) {
-          char = this.randomChar();
-          this.queue[i].char = char;
+          char = chars[Math.floor(Math.random() * chars.length)];
+          queue[i].char = char;
         }
-        output += `<span class="scrambling-text">${char}</span>`;
+        output += char;
       } else {
         output += from;
       }
     }
-    this.el.innerHTML = output;
-    if (complete === this.queue.length) {
-      this.resolve();
-    } else {
-      this.frameRequest = requestAnimationFrame(this.update);
-      this.frame += 1;
-    }
-  }
-
-  randomChar() {
-    return this.chars[Math.floor(Math.random() * this.chars.length)];
+    
+    return {
+      text: output,
+      continue: !(complete === queue.length)
+    };
   }
 
   render() {
-    return <span className="scramble-text"/>;
+    return <span className="scramble-text">{this.state.scramble}</span>;
   }
 };
 
 // const element = document.querySelector('.scramble-text');
 // const textScrambleObj = new TextScramble(element);
-
-// let counter = 0;
-// const next = function next() {
-//   textScrambleObj.setText(phrases[counter]).then(function () {
-//     setTimeout(next, 2000);
-//   });
-//   counter = (counter + 1) % phrases.length;
-// };
