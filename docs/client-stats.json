@@ -2,13 +2,13 @@
   "errors": [],
   "warnings": [],
   "version": "3.12.0",
-  "hash": "537de04a652fad6d0646",
-  "time": 6567,
+  "hash": "ab59bfa15718e5611885",
+  "time": 6350,
   "publicPath": "/",
   "assetsByChunkName": {
     "src/containers/Home": [
-      "templates/src/containers/Home.4b12d669.js",
-      "templates/src/containers/Home.4b12d669.js.map"
+      "templates/src/containers/Home.fae0fecb.js",
+      "templates/src/containers/Home.fae0fecb.js.map"
     ],
     "src/containers/404": [
       "templates/src/containers/404.a838cf89.js",
@@ -16,19 +16,19 @@
     ],
     "main": [
       "main.06d27e41.js",
-      "styles.537de04a.css",
+      "styles.ab59bfa1.css",
       "main.06d27e41.js.map",
-      "styles.537de04a.css.map"
+      "styles.ab59bfa1.css.map"
     ],
     "bootstrap": [
-      "bootstrap.db1a7171.js",
-      "bootstrap.db1a7171.js.map"
+      "bootstrap.594084aa.js",
+      "bootstrap.594084aa.js.map"
     ]
   },
   "assets": [
     {
-      "name": "templates/src/containers/Home.4b12d669.js",
-      "size": 3994,
+      "name": "templates/src/containers/Home.fae0fecb.js",
+      "size": 4140,
       "chunks": [
         0
       ],
@@ -61,7 +61,7 @@
       "isOverSizeLimit": true
     },
     {
-      "name": "bootstrap.db1a7171.js",
+      "name": "bootstrap.594084aa.js",
       "size": 1505,
       "chunks": [
         3
@@ -72,7 +72,7 @@
       "emitted": true
     },
     {
-      "name": "styles.537de04a.css",
+      "name": "styles.ab59bfa1.css",
       "size": 10096,
       "chunks": [
         2
@@ -83,8 +83,8 @@
       "emitted": true
     },
     {
-      "name": "templates/src/containers/Home.4b12d669.js.map",
-      "size": 18086,
+      "name": "templates/src/containers/Home.fae0fecb.js.map",
+      "size": 18682,
       "chunks": [
         0
       ],
@@ -116,7 +116,7 @@
       "emitted": true
     },
     {
-      "name": "styles.537de04a.css.map",
+      "name": "styles.ab59bfa1.css.map",
       "size": 96,
       "chunks": [
         2
@@ -127,7 +127,7 @@
       "emitted": true
     },
     {
-      "name": "bootstrap.db1a7171.js.map",
+      "name": "bootstrap.594084aa.js.map",
       "size": 14308,
       "chunks": [
         3
@@ -146,12 +146,12 @@
         2
       ],
       "assets": [
-        "bootstrap.db1a7171.js",
-        "bootstrap.db1a7171.js.map",
+        "bootstrap.594084aa.js",
+        "bootstrap.594084aa.js.map",
         "main.06d27e41.js",
-        "styles.537de04a.css",
+        "styles.ab59bfa1.css",
         "main.06d27e41.js.map",
-        "styles.537de04a.css.map"
+        "styles.ab59bfa1.css.map"
       ],
       "isOverSizeLimit": true
     }
@@ -163,15 +163,15 @@
       "initial": false,
       "entry": false,
       "extraAsync": false,
-      "size": 8048,
+      "size": 8265,
       "names": [
         "src/containers/Home"
       ],
       "files": [
-        "templates/src/containers/Home.4b12d669.js",
-        "templates/src/containers/Home.4b12d669.js.map"
+        "templates/src/containers/Home.fae0fecb.js",
+        "templates/src/containers/Home.fae0fecb.js.map"
       ],
-      "hash": "4b12d6699daa8c65e022",
+      "hash": "fae0fecba87b3c859e18",
       "parents": [
         2
       ],
@@ -229,7 +229,7 @@
           "name": "./src/containers/Home/scramble.js",
           "index": 132,
           "index2": 128,
-          "size": 5296,
+          "size": 5513,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -259,7 +259,7 @@
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 4,
-          "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar phrases = [\n// work & skills\n'coding', 'elegant design', 'mobile app development', 'web technology', 'delightful UX', 'front end development', 'software engineering',\n// mind set\n'building amazing products', 'solving problems', 'design thinking',\n// life and peronality\n'being cool', 'trending technologies', 'music', 'food'];\n\nvar chars = 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM!<>-_\\\\/[]{}—=+*^?#________金木水火土日月手口人心女一あおえいうたかけくきこまめむみもさしすせそ';\n\nvar TextScramble = function (_Component) {\n  _inherits(TextScramble, _Component);\n\n  function TextScramble(prop) {\n    _classCallCheck(this, TextScramble);\n\n    var _this = _possibleConstructorReturn(this, (TextScramble.__proto__ || Object.getPrototypeOf(TextScramble)).call(this, prop));\n\n    _this.state = {\n      counter: 0,\n      scramble: ''\n    };\n    return _this;\n  }\n\n  _createClass(TextScramble, [{\n    key: 'componentDidMount',\n    value: function componentDidMount() {\n      this.start();\n      this.queue = [];\n      this.frame = 0;\n      this.frameRequest = null;\n    }\n  }, {\n    key: 'start',\n    value: function start() {\n      var counter = this.state.counter;\n\n      this.setText(phrases[counter]);\n      this.setState({\n        counter: (counter + 1) % phrases.length\n      });\n      setTimeout(this.start.bind(this), 2000);\n    }\n  }, {\n    key: 'setText',\n    value: function setText(newText) {\n      var scramble = this.state.scramble;\n\n\n      var oldText = scramble;\n      var length = Math.max(oldText.length, newText.length);\n      // const promise = new Promise((resolve) => {\n      //   that.resolve = resolve;\n      //   return resolve;\n      // });\n      this.queue = [];\n      this.frame = 0;\n      for (var i = 0; i < length; i++) {\n        var from = oldText[i] || '';\n        var to = newText[i] || '';\n        var start = Math.floor(Math.random() * 40);\n        var end = start + Math.floor(Math.random() * 40);\n        this.queue.push({\n          from: from,\n          to: to,\n          start: start,\n          end: end\n        });\n      }\n      cancelAnimationFrame(this.frameRequest);\n      var t = { text: '', continue: true };\n      for (; t.continue; t = this.update(this.queue, this.frame)) {\n        this.frame += 1;\n        this.frameRequest = requestAnimationFrame(function () {});\n      }\n      this.setState({ scramble: t.text });\n    }\n  }, {\n    key: 'update',\n    value: function update(queue, frame) {\n      var output = '';\n      var complete = 0;\n      for (var i = 0, n = queue.length; i < n; i++) {\n        var _queue$i = queue[i];\n        var from = _queue$i.from;\n        var to = _queue$i.to;\n        var start = _queue$i.start;\n        var end = _queue$i.end;\n        var char = _queue$i.char;\n\n        if (frame >= end) {\n          complete += 1;\n          output += to;\n        } else if (frame >= start) {\n          if (!char || Math.random() < 0.28) {\n            char = chars[Math.floor(Math.random() * chars.length)];\n            queue[i].char = char;\n          }\n          output += char;\n        } else {\n          output += from;\n        }\n      }\n\n      return {\n        text: output,\n        continue: !(complete === queue.length)\n      };\n    }\n  }, {\n    key: 'render',\n    value: function render() {\n      return _react2.default.createElement(\n        'span',\n        { className: 'scramble-text' },\n        this.state.scramble\n      );\n    }\n  }]);\n\n  return TextScramble;\n}(_react.Component);\n\nexports.default = TextScramble;\n;\n\n// const element = document.querySelector('.scramble-text');\n// const textScrambleObj = new TextScramble(element);"
+          "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar phrases = [\n// work & skills\n'coding', 'elegant design', 'mobile app development', 'web technology', 'delightful UX', 'front end development', 'software engineering',\n// mind set\n'building amazing products', 'solving problems', 'design thinking',\n// life and peronality\n'being cool', 'trending technologies', 'music', 'food'];\n\nvar chars = 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM!<>-_\\\\/[]{}—=+*^?#________金木水火土日月手口人心女一あおえいうたかけくきこまめむみもさしすせそ';\n\nvar TextScramble = function (_Component) {\n  _inherits(TextScramble, _Component);\n\n  function TextScramble(prop) {\n    _classCallCheck(this, TextScramble);\n\n    var _this = _possibleConstructorReturn(this, (TextScramble.__proto__ || Object.getPrototypeOf(TextScramble)).call(this, prop));\n\n    _this.textFieldRef = _react2.default.createRef();\n    _this.state = {\n      counter: 0,\n      scramble: ''\n    };\n    return _this;\n  }\n\n  _createClass(TextScramble, [{\n    key: 'componentDidMount',\n    value: function componentDidMount() {\n      this.start();\n      this.queue = [];\n      this.frame = 0;\n      this.frameRequest = null;\n    }\n  }, {\n    key: 'start',\n    value: function start() {\n      var counter = this.state.counter;\n\n      this.setText(phrases[counter]);\n      setTimeout(this.start.bind(this), 4000);\n    }\n  }, {\n    key: 'setText',\n    value: function setText(newText) {\n      var _this2 = this;\n\n      var _state = this.state,\n          scramble = _state.scramble,\n          counter = _state.counter;\n\n\n      var oldText = scramble;\n      var length = Math.max(oldText.length, newText.length);\n      this.queue = [];\n      this.frame = 0;\n      for (var i = 0; i < length; i++) {\n        var from = oldText[i] || '';\n        var to = newText[i] || '';\n        var start = Math.floor(Math.random() * 40);\n        var end = start + Math.floor(Math.random() * 40);\n        this.queue.push({\n          from: from,\n          to: to,\n          start: start,\n          end: end\n        });\n      }\n      cancelAnimationFrame(this.frameRequest);\n\n      var t = { text: newText, continue: true };\n      var f = function f() {\n        t = _this2.update(_this2.queue, _this2.frame);\n        if (t.text) {\n          _this2.textFieldRef.current.innerHTML = t.text;\n        }\n        if (t.continue) {\n          _this2.frame += 1;\n          _this2.frameRequest = requestAnimationFrame(f);\n        }\n      };\n      this.frameRequest = requestAnimationFrame(f);\n      this.setState({\n        scramble: t.text,\n        counter: (counter + 1) % phrases.length\n      });\n    }\n  }, {\n    key: 'update',\n    value: function update(queue, frame) {\n      var output = '';\n      var complete = 0;\n      for (var i = 0, n = queue.length; i < n; i++) {\n        var _queue$i = queue[i];\n        var from = _queue$i.from;\n        var to = _queue$i.to;\n        var start = _queue$i.start;\n        var end = _queue$i.end;\n        var char = _queue$i.char;\n\n        if (frame >= end) {\n          complete += 1;\n          output += to;\n        } else if (frame >= start) {\n          if (!char || Math.random() < 0.28) {\n            char = chars[Math.floor(Math.random() * chars.length)];\n            queue[i].char = char;\n          }\n          output += char;\n        } else {\n          output += from;\n        }\n      }\n      return {\n        text: output,\n        continue: !(complete === queue.length)\n      };\n    }\n  }, {\n    key: 'render',\n    value: function render() {\n      return _react2.default.createElement(\n        'span',\n        { ref: this.textFieldRef, className: 'scramble-text' },\n        this.state.scramble\n      );\n    }\n  }]);\n\n  return TextScramble;\n}(_react.Component);\n\n// const element = document.querySelector('.scramble-text');\n// const textScrambleObj = new TextScramble(element);\n\n\nexports.default = TextScramble;"
         },
         {
           "id": 135,
@@ -443,9 +443,9 @@
       ],
       "files": [
         "main.06d27e41.js",
-        "styles.537de04a.css",
+        "styles.ab59bfa1.css",
         "main.06d27e41.js.map",
-        "styles.537de04a.css.map"
+        "styles.ab59bfa1.css.map"
       ],
       "hash": "06d27e41568752244dd7",
       "parents": [
@@ -1742,9 +1742,9 @@
             2
           ],
           "assets": [],
-          "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/react-static/lib/client/components/RouteData.js",
-          "issuerId": 89,
-          "issuerName": "./node_modules/react-static/lib/client/components/RouteData.js",
+          "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/react-static/lib/client/methods.js",
+          "issuerId": 11,
+          "issuerName": "./node_modules/react-static/lib/client/methods.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -1932,9 +1932,9 @@
             2
           ],
           "assets": [],
-          "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/react-static/lib/client/components/RouteData.js",
-          "issuerId": 89,
-          "issuerName": "./node_modules/react-static/lib/client/components/RouteData.js",
+          "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/react-static/lib/client/methods.js",
+          "issuerId": 11,
+          "issuerName": "./node_modules/react-static/lib/client/methods.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -2389,9 +2389,9 @@
             2
           ],
           "assets": [],
-          "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/react/cjs/react.production.min.js",
-          "issuerId": 53,
-          "issuerName": "./node_modules/react/cjs/react.production.min.js",
+          "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/react-dom/cjs/react-dom.production.min.js",
+          "issuerId": 55,
+          "issuerName": "./node_modules/react-dom/cjs/react-dom.production.min.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -3578,9 +3578,9 @@
             2
           ],
           "assets": [],
-          "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/react-static/lib/client/components/SiteData.js",
-          "issuerId": 111,
-          "issuerName": "./node_modules/react-static/lib/client/components/SiteData.js",
+          "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/react-static/lib/client/methods.js",
+          "issuerId": 11,
+          "issuerName": "./node_modules/react-static/lib/client/methods.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -7341,10 +7341,10 @@
         "bootstrap"
       ],
       "files": [
-        "bootstrap.db1a7171.js",
-        "bootstrap.db1a7171.js.map"
+        "bootstrap.594084aa.js",
+        "bootstrap.594084aa.js.map"
       ],
-      "hash": "db1a71710d03ff1c9935",
+      "hash": "594084aabe13892a981b",
       "parents": [],
       "modules": [],
       "filteredModules": 0,
@@ -8642,9 +8642,9 @@
         2
       ],
       "assets": [],
-      "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/react-static/lib/client/components/RouteData.js",
-      "issuerId": 89,
-      "issuerName": "./node_modules/react-static/lib/client/components/RouteData.js",
+      "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/react-static/lib/client/methods.js",
+      "issuerId": 11,
+      "issuerName": "./node_modules/react-static/lib/client/methods.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -8832,9 +8832,9 @@
         2
       ],
       "assets": [],
-      "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/react-static/lib/client/components/RouteData.js",
-      "issuerId": 89,
-      "issuerName": "./node_modules/react-static/lib/client/components/RouteData.js",
+      "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/react-static/lib/client/methods.js",
+      "issuerId": 11,
+      "issuerName": "./node_modules/react-static/lib/client/methods.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -9289,9 +9289,9 @@
         2
       ],
       "assets": [],
-      "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/react/cjs/react.production.min.js",
-      "issuerId": 53,
-      "issuerName": "./node_modules/react/cjs/react.production.min.js",
+      "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/react-dom/cjs/react-dom.production.min.js",
+      "issuerId": 55,
+      "issuerName": "./node_modules/react-dom/cjs/react-dom.production.min.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -10478,9 +10478,9 @@
         2
       ],
       "assets": [],
-      "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/react-static/lib/client/components/SiteData.js",
-      "issuerId": 111,
-      "issuerName": "./node_modules/react-static/lib/client/components/SiteData.js",
+      "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/react-static/lib/client/methods.js",
+      "issuerId": 11,
+      "issuerName": "./node_modules/react-static/lib/client/methods.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -14316,7 +14316,7 @@
       "name": "./src/containers/Home/scramble.js",
       "index": 132,
       "index2": 128,
-      "size": 5296,
+      "size": 5513,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -14346,7 +14346,7 @@
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 4,
-      "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar phrases = [\n// work & skills\n'coding', 'elegant design', 'mobile app development', 'web technology', 'delightful UX', 'front end development', 'software engineering',\n// mind set\n'building amazing products', 'solving problems', 'design thinking',\n// life and peronality\n'being cool', 'trending technologies', 'music', 'food'];\n\nvar chars = 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM!<>-_\\\\/[]{}—=+*^?#________金木水火土日月手口人心女一あおえいうたかけくきこまめむみもさしすせそ';\n\nvar TextScramble = function (_Component) {\n  _inherits(TextScramble, _Component);\n\n  function TextScramble(prop) {\n    _classCallCheck(this, TextScramble);\n\n    var _this = _possibleConstructorReturn(this, (TextScramble.__proto__ || Object.getPrototypeOf(TextScramble)).call(this, prop));\n\n    _this.state = {\n      counter: 0,\n      scramble: ''\n    };\n    return _this;\n  }\n\n  _createClass(TextScramble, [{\n    key: 'componentDidMount',\n    value: function componentDidMount() {\n      this.start();\n      this.queue = [];\n      this.frame = 0;\n      this.frameRequest = null;\n    }\n  }, {\n    key: 'start',\n    value: function start() {\n      var counter = this.state.counter;\n\n      this.setText(phrases[counter]);\n      this.setState({\n        counter: (counter + 1) % phrases.length\n      });\n      setTimeout(this.start.bind(this), 2000);\n    }\n  }, {\n    key: 'setText',\n    value: function setText(newText) {\n      var scramble = this.state.scramble;\n\n\n      var oldText = scramble;\n      var length = Math.max(oldText.length, newText.length);\n      // const promise = new Promise((resolve) => {\n      //   that.resolve = resolve;\n      //   return resolve;\n      // });\n      this.queue = [];\n      this.frame = 0;\n      for (var i = 0; i < length; i++) {\n        var from = oldText[i] || '';\n        var to = newText[i] || '';\n        var start = Math.floor(Math.random() * 40);\n        var end = start + Math.floor(Math.random() * 40);\n        this.queue.push({\n          from: from,\n          to: to,\n          start: start,\n          end: end\n        });\n      }\n      cancelAnimationFrame(this.frameRequest);\n      var t = { text: '', continue: true };\n      for (; t.continue; t = this.update(this.queue, this.frame)) {\n        this.frame += 1;\n        this.frameRequest = requestAnimationFrame(function () {});\n      }\n      this.setState({ scramble: t.text });\n    }\n  }, {\n    key: 'update',\n    value: function update(queue, frame) {\n      var output = '';\n      var complete = 0;\n      for (var i = 0, n = queue.length; i < n; i++) {\n        var _queue$i = queue[i];\n        var from = _queue$i.from;\n        var to = _queue$i.to;\n        var start = _queue$i.start;\n        var end = _queue$i.end;\n        var char = _queue$i.char;\n\n        if (frame >= end) {\n          complete += 1;\n          output += to;\n        } else if (frame >= start) {\n          if (!char || Math.random() < 0.28) {\n            char = chars[Math.floor(Math.random() * chars.length)];\n            queue[i].char = char;\n          }\n          output += char;\n        } else {\n          output += from;\n        }\n      }\n\n      return {\n        text: output,\n        continue: !(complete === queue.length)\n      };\n    }\n  }, {\n    key: 'render',\n    value: function render() {\n      return _react2.default.createElement(\n        'span',\n        { className: 'scramble-text' },\n        this.state.scramble\n      );\n    }\n  }]);\n\n  return TextScramble;\n}(_react.Component);\n\nexports.default = TextScramble;\n;\n\n// const element = document.querySelector('.scramble-text');\n// const textScrambleObj = new TextScramble(element);"
+      "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar phrases = [\n// work & skills\n'coding', 'elegant design', 'mobile app development', 'web technology', 'delightful UX', 'front end development', 'software engineering',\n// mind set\n'building amazing products', 'solving problems', 'design thinking',\n// life and peronality\n'being cool', 'trending technologies', 'music', 'food'];\n\nvar chars = 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM!<>-_\\\\/[]{}—=+*^?#________金木水火土日月手口人心女一あおえいうたかけくきこまめむみもさしすせそ';\n\nvar TextScramble = function (_Component) {\n  _inherits(TextScramble, _Component);\n\n  function TextScramble(prop) {\n    _classCallCheck(this, TextScramble);\n\n    var _this = _possibleConstructorReturn(this, (TextScramble.__proto__ || Object.getPrototypeOf(TextScramble)).call(this, prop));\n\n    _this.textFieldRef = _react2.default.createRef();\n    _this.state = {\n      counter: 0,\n      scramble: ''\n    };\n    return _this;\n  }\n\n  _createClass(TextScramble, [{\n    key: 'componentDidMount',\n    value: function componentDidMount() {\n      this.start();\n      this.queue = [];\n      this.frame = 0;\n      this.frameRequest = null;\n    }\n  }, {\n    key: 'start',\n    value: function start() {\n      var counter = this.state.counter;\n\n      this.setText(phrases[counter]);\n      setTimeout(this.start.bind(this), 4000);\n    }\n  }, {\n    key: 'setText',\n    value: function setText(newText) {\n      var _this2 = this;\n\n      var _state = this.state,\n          scramble = _state.scramble,\n          counter = _state.counter;\n\n\n      var oldText = scramble;\n      var length = Math.max(oldText.length, newText.length);\n      this.queue = [];\n      this.frame = 0;\n      for (var i = 0; i < length; i++) {\n        var from = oldText[i] || '';\n        var to = newText[i] || '';\n        var start = Math.floor(Math.random() * 40);\n        var end = start + Math.floor(Math.random() * 40);\n        this.queue.push({\n          from: from,\n          to: to,\n          start: start,\n          end: end\n        });\n      }\n      cancelAnimationFrame(this.frameRequest);\n\n      var t = { text: newText, continue: true };\n      var f = function f() {\n        t = _this2.update(_this2.queue, _this2.frame);\n        if (t.text) {\n          _this2.textFieldRef.current.innerHTML = t.text;\n        }\n        if (t.continue) {\n          _this2.frame += 1;\n          _this2.frameRequest = requestAnimationFrame(f);\n        }\n      };\n      this.frameRequest = requestAnimationFrame(f);\n      this.setState({\n        scramble: t.text,\n        counter: (counter + 1) % phrases.length\n      });\n    }\n  }, {\n    key: 'update',\n    value: function update(queue, frame) {\n      var output = '';\n      var complete = 0;\n      for (var i = 0, n = queue.length; i < n; i++) {\n        var _queue$i = queue[i];\n        var from = _queue$i.from;\n        var to = _queue$i.to;\n        var start = _queue$i.start;\n        var end = _queue$i.end;\n        var char = _queue$i.char;\n\n        if (frame >= end) {\n          complete += 1;\n          output += to;\n        } else if (frame >= start) {\n          if (!char || Math.random() < 0.28) {\n            char = chars[Math.floor(Math.random() * chars.length)];\n            queue[i].char = char;\n          }\n          output += char;\n        } else {\n          output += from;\n        }\n      }\n      return {\n        text: output,\n        continue: !(complete === queue.length)\n      };\n    }\n  }, {\n    key: 'render',\n    value: function render() {\n      return _react2.default.createElement(\n        'span',\n        { ref: this.textFieldRef, className: 'scramble-text' },\n        this.state.scramble\n      );\n    }\n  }]);\n\n  return TextScramble;\n}(_react.Component);\n\n// const element = document.querySelector('.scramble-text');\n// const textScrambleObj = new TextScramble(element);\n\n\nexports.default = TextScramble;"
     },
     {
       "id": 135,

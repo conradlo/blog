@@ -1380,6 +1380,7 @@ var TextScramble = function (_Component) {
 
     var _this = _possibleConstructorReturn(this, (TextScramble.__proto__ || Object.getPrototypeOf(TextScramble)).call(this, prop));
 
+    _this.textFieldRef = _react2.default.createRef();
     _this.state = {
       counter: 0,
       scramble: ''
@@ -1401,23 +1402,20 @@ var TextScramble = function (_Component) {
       var counter = this.state.counter;
 
       this.setText(phrases[counter]);
-      this.setState({
-        counter: (counter + 1) % phrases.length
-      });
-      setTimeout(this.start.bind(this), 2000);
+      setTimeout(this.start.bind(this), 4000);
     }
   }, {
     key: 'setText',
     value: function setText(newText) {
-      var scramble = this.state.scramble;
+      var _this2 = this;
+
+      var _state = this.state,
+          scramble = _state.scramble,
+          counter = _state.counter;
 
 
       var oldText = scramble;
       var length = Math.max(oldText.length, newText.length);
-      // const promise = new Promise((resolve) => {
-      //   that.resolve = resolve;
-      //   return resolve;
-      // });
       this.queue = [];
       this.frame = 0;
       for (var i = 0; i < length; i++) {
@@ -1433,12 +1431,23 @@ var TextScramble = function (_Component) {
         });
       }
       cancelAnimationFrame(this.frameRequest);
-      var t = { text: '', continue: true };
-      for (; t.continue; t = this.update(this.queue, this.frame)) {
-        this.frame += 1;
-        this.frameRequest = requestAnimationFrame(function () {});
-      }
-      this.setState({ scramble: t.text });
+
+      var t = { text: newText, continue: true };
+      var f = function f() {
+        t = _this2.update(_this2.queue, _this2.frame);
+        if (t.text) {
+          _this2.textFieldRef.current.innerHTML = t.text;
+        }
+        if (t.continue) {
+          _this2.frame += 1;
+          _this2.frameRequest = requestAnimationFrame(f);
+        }
+      };
+      this.frameRequest = requestAnimationFrame(f);
+      this.setState({
+        scramble: t.text,
+        counter: (counter + 1) % phrases.length
+      });
     }
   }, {
     key: 'update',
@@ -1466,7 +1475,6 @@ var TextScramble = function (_Component) {
           output += from;
         }
       }
-
       return {
         text: output,
         continue: !(complete === queue.length)
@@ -1477,7 +1485,7 @@ var TextScramble = function (_Component) {
     value: function render() {
       return _react2.default.createElement(
         'span',
-        { className: 'scramble-text' },
+        { ref: this.textFieldRef, className: 'scramble-text' },
         this.state.scramble
       );
     }
@@ -1486,11 +1494,11 @@ var TextScramble = function (_Component) {
   return TextScramble;
 }(_react.Component);
 
-exports.default = TextScramble;
-;
-
 // const element = document.querySelector('.scramble-text');
 // const textScrambleObj = new TextScramble(element);
+
+
+exports.default = TextScramble;
 
 /***/ }),
 /* 22 */
@@ -1580,4 +1588,4 @@ exports.push([module.i, "/*! normalize.css v3.0.2 | MIT License | git.io/normali
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.702af630.js.map
+//# sourceMappingURL=static.5ffd1ec5.js.map
