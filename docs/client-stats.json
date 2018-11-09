@@ -2,9 +2,9 @@
   "errors": [],
   "warnings": [],
   "version": "3.12.0",
-  "hash": "ab59bfa15718e5611885",
-  "time": 6350,
-  "publicPath": "/",
+  "hash": "7ec506c1622588448365",
+  "time": 5642,
+  "publicPath": "https://conradlo.com/",
   "assetsByChunkName": {
     "src/containers/Home": [
       "templates/src/containers/Home.fae0fecb.js",
@@ -15,14 +15,14 @@
       "templates/src/containers/404.a838cf89.js.map"
     ],
     "main": [
-      "main.06d27e41.js",
-      "styles.ab59bfa1.css",
-      "main.06d27e41.js.map",
-      "styles.ab59bfa1.css.map"
+      "main.ddc73270.js",
+      "styles.7ec506c1.css",
+      "main.ddc73270.js.map",
+      "styles.7ec506c1.css.map"
     ],
     "bootstrap": [
-      "bootstrap.594084aa.js",
-      "bootstrap.594084aa.js.map"
+      "bootstrap.3a8a55dd.js",
+      "bootstrap.3a8a55dd.js.map"
     ]
   },
   "assets": [
@@ -49,8 +49,8 @@
       "emitted": true
     },
     {
-      "name": "main.06d27e41.js",
-      "size": 273192,
+      "name": "main.ddc73270.js",
+      "size": 273292,
       "chunks": [
         2
       ],
@@ -61,8 +61,8 @@
       "isOverSizeLimit": true
     },
     {
-      "name": "bootstrap.594084aa.js",
-      "size": 1505,
+      "name": "bootstrap.3a8a55dd.js",
+      "size": 1525,
       "chunks": [
         3
       ],
@@ -72,7 +72,7 @@
       "emitted": true
     },
     {
-      "name": "styles.ab59bfa1.css",
+      "name": "styles.7ec506c1.css",
       "size": 10096,
       "chunks": [
         2
@@ -105,8 +105,8 @@
       "emitted": true
     },
     {
-      "name": "main.06d27e41.js.map",
-      "size": 1494691,
+      "name": "main.ddc73270.js.map",
+      "size": 1494796,
       "chunks": [
         2
       ],
@@ -116,7 +116,7 @@
       "emitted": true
     },
     {
-      "name": "styles.ab59bfa1.css.map",
+      "name": "styles.7ec506c1.css.map",
       "size": 96,
       "chunks": [
         2
@@ -127,8 +127,8 @@
       "emitted": true
     },
     {
-      "name": "bootstrap.594084aa.js.map",
-      "size": 14308,
+      "name": "bootstrap.3a8a55dd.js.map",
+      "size": 14349,
       "chunks": [
         3
       ],
@@ -146,12 +146,12 @@
         2
       ],
       "assets": [
-        "bootstrap.594084aa.js",
-        "bootstrap.594084aa.js.map",
-        "main.06d27e41.js",
-        "styles.ab59bfa1.css",
-        "main.06d27e41.js.map",
-        "styles.ab59bfa1.css.map"
+        "bootstrap.3a8a55dd.js",
+        "bootstrap.3a8a55dd.js.map",
+        "main.ddc73270.js",
+        "styles.7ec506c1.css",
+        "main.ddc73270.js.map",
+        "styles.7ec506c1.css.map"
       ],
       "isOverSizeLimit": true
     }
@@ -442,12 +442,12 @@
         "main"
       ],
       "files": [
-        "main.06d27e41.js",
-        "styles.ab59bfa1.css",
-        "main.06d27e41.js.map",
-        "styles.ab59bfa1.css.map"
+        "main.ddc73270.js",
+        "styles.7ec506c1.css",
+        "main.ddc73270.js.map",
+        "styles.7ec506c1.css.map"
       ],
-      "hash": "06d27e41568752244dd7",
+      "hash": "ddc73270c8771225d5e7",
       "parents": [
         3
       ],
@@ -1742,9 +1742,9 @@
             2
           ],
           "assets": [],
-          "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/react-static/lib/client/methods.js",
-          "issuerId": 11,
-          "issuerName": "./node_modules/react-static/lib/client/methods.js",
+          "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/react-static/lib/client/components/RouteData.js",
+          "issuerId": 89,
+          "issuerName": "./node_modules/react-static/lib/client/components/RouteData.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -1932,9 +1932,9 @@
             2
           ],
           "assets": [],
-          "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/react-static/lib/client/methods.js",
-          "issuerId": 11,
-          "issuerName": "./node_modules/react-static/lib/client/methods.js",
+          "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/react-static/lib/client/components/RouteData.js",
+          "issuerId": 89,
+          "issuerName": "./node_modules/react-static/lib/client/components/RouteData.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -2389,9 +2389,9 @@
             2
           ],
           "assets": [],
-          "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/react-dom/cjs/react-dom.production.min.js",
-          "issuerId": 55,
-          "issuerName": "./node_modules/react-dom/cjs/react-dom.production.min.js",
+          "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/react/cjs/react.production.min.js",
+          "issuerId": 53,
+          "issuerName": "./node_modules/react/cjs/react.production.min.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -2445,9 +2445,9 @@
             2
           ],
           "assets": [],
-          "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/history/es/createMemoryHistory.js",
-          "issuerId": 64,
-          "issuerName": "./node_modules/history/es/createMemoryHistory.js",
+          "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/history/es/createBrowserHistory.js",
+          "issuerId": 62,
+          "issuerName": "./node_modules/history/es/createBrowserHistory.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -3119,9 +3119,9 @@
             2
           ],
           "assets": [],
-          "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/history/es/createHashHistory.js",
-          "issuerId": 63,
-          "issuerName": "./node_modules/history/es/createHashHistory.js",
+          "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/history/es/createBrowserHistory.js",
+          "issuerId": 62,
+          "issuerName": "./node_modules/history/es/createBrowserHistory.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -3578,9 +3578,9 @@
             2
           ],
           "assets": [],
-          "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/react-static/lib/client/methods.js",
-          "issuerId": 11,
-          "issuerName": "./node_modules/react-static/lib/client/methods.js",
+          "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/react-static/lib/client/components/SiteData.js",
+          "issuerId": 111,
+          "issuerName": "./node_modules/react-static/lib/client/components/SiteData.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -7341,10 +7341,10 @@
         "bootstrap"
       ],
       "files": [
-        "bootstrap.594084aa.js",
-        "bootstrap.594084aa.js.map"
+        "bootstrap.3a8a55dd.js",
+        "bootstrap.3a8a55dd.js.map"
       ],
-      "hash": "594084aabe13892a981b",
+      "hash": "3a8a55dd01d14a782ce1",
       "parents": [],
       "modules": [],
       "filteredModules": 0,
@@ -8642,9 +8642,9 @@
         2
       ],
       "assets": [],
-      "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/react-static/lib/client/methods.js",
-      "issuerId": 11,
-      "issuerName": "./node_modules/react-static/lib/client/methods.js",
+      "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/react-static/lib/client/components/RouteData.js",
+      "issuerId": 89,
+      "issuerName": "./node_modules/react-static/lib/client/components/RouteData.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -8832,9 +8832,9 @@
         2
       ],
       "assets": [],
-      "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/react-static/lib/client/methods.js",
-      "issuerId": 11,
-      "issuerName": "./node_modules/react-static/lib/client/methods.js",
+      "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/react-static/lib/client/components/RouteData.js",
+      "issuerId": 89,
+      "issuerName": "./node_modules/react-static/lib/client/components/RouteData.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -9289,9 +9289,9 @@
         2
       ],
       "assets": [],
-      "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/react-dom/cjs/react-dom.production.min.js",
-      "issuerId": 55,
-      "issuerName": "./node_modules/react-dom/cjs/react-dom.production.min.js",
+      "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/react/cjs/react.production.min.js",
+      "issuerId": 53,
+      "issuerName": "./node_modules/react/cjs/react.production.min.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -9345,9 +9345,9 @@
         2
       ],
       "assets": [],
-      "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/history/es/createMemoryHistory.js",
-      "issuerId": 64,
-      "issuerName": "./node_modules/history/es/createMemoryHistory.js",
+      "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/history/es/createBrowserHistory.js",
+      "issuerId": 62,
+      "issuerName": "./node_modules/history/es/createBrowserHistory.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -10019,9 +10019,9 @@
         2
       ],
       "assets": [],
-      "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/history/es/createHashHistory.js",
-      "issuerId": 63,
-      "issuerName": "./node_modules/history/es/createHashHistory.js",
+      "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/history/es/createBrowserHistory.js",
+      "issuerId": 62,
+      "issuerName": "./node_modules/history/es/createBrowserHistory.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -10478,9 +10478,9 @@
         2
       ],
       "assets": [],
-      "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/react-static/lib/client/methods.js",
-      "issuerId": 11,
-      "issuerName": "./node_modules/react-static/lib/client/methods.js",
+      "issuer": "/Users/slo/Developer/_opensource/conradlo.github.io/node_modules/react-static/lib/client/components/SiteData.js",
+      "issuerId": 111,
+      "issuerName": "./node_modules/react-static/lib/client/components/SiteData.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -14430,7 +14430,7 @@
     {
       "errors": [],
       "warnings": [],
-      "publicPath": "/",
+      "publicPath": "https://conradlo.com/",
       "assetsByChunkName": {},
       "assets": [],
       "filteredAssets": 0,
@@ -14456,7 +14456,7 @@
           "files": [
             "extract-text-webpack-plugin-output-filename"
           ],
-          "hash": "dc360f81b91a04e4390b",
+          "hash": "8beaa9a19947a302e7fc",
           "parents": [],
           "modules": [
             {
@@ -14708,7 +14708,7 @@
     {
       "errors": [],
       "warnings": [],
-      "publicPath": "/",
+      "publicPath": "https://conradlo.com/",
       "assetsByChunkName": {},
       "assets": [],
       "filteredAssets": 0,
@@ -14734,7 +14734,7 @@
           "files": [
             "extract-text-webpack-plugin-output-filename"
           ],
-          "hash": "2501e26e1b5d1c43c683",
+          "hash": "91c0a7014d55a723ebc3",
           "parents": [],
           "modules": [
             {
@@ -14892,7 +14892,7 @@
     {
       "errors": [],
       "warnings": [],
-      "publicPath": "/",
+      "publicPath": "https://conradlo.com/",
       "assetsByChunkName": {},
       "assets": [],
       "filteredAssets": 0,
@@ -14918,7 +14918,7 @@
           "files": [
             "extract-text-webpack-plugin-output-filename"
           ],
-          "hash": "0331906aa773f4c08ac7",
+          "hash": "b020cf0a80c9c529306f",
           "parents": [],
           "modules": [
             {
