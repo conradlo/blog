@@ -1,4 +1,5 @@
 // import axios from 'axios'
+import React from 'react'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
 
 export default {
@@ -6,6 +7,18 @@ export default {
   getSiteData: () => ({
     title: 'Conrad Lo',
   }),
+  Document: ({ Html, Head, Body, children, siteData }) => (
+    <Html lang="en-US">
+      <Head>
+        <title>{siteData.title}</title>
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=9, chrome=1"/>
+        <meta name='viewport' content='user-scalable=no, width=device-width, initial-scale=1.0'/>
+        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32"/>
+      </Head>
+      <Body>{children}</Body>
+    </Html>
+  ),
   getRoutes: async () => {
     // const { data: posts } = await axios.get('https://jsonplaceholder.typicode.com/posts')
     return [
@@ -13,10 +26,10 @@ export default {
         path: '/',
         component: 'src/containers/Home',
       },
-      {
-        path: '/about',
-        component: 'src/containers/About',
-      },
+      // {
+      //   path: '/about',
+      //   component: 'src/containers/About',
+      // },
       // {
       //   path: '/blog',
       //   component: 'src/containers/Blog',

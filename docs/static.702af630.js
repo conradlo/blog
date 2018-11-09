@@ -67,10 +67,10 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "https://conradlo.com/";
+/******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 9);
+/******/ 	return __webpack_require__(__webpack_require__.s = 8);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -335,13 +335,13 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactStatic = __webpack_require__(2);
 
-var _scramble = __webpack_require__(22);
+var _scramble = __webpack_require__(21);
 
 var _scramble2 = _interopRequireDefault(_scramble);
 
-__webpack_require__(23);
+__webpack_require__(22);
 
-__webpack_require__(24);
+__webpack_require__(23);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -430,12 +430,7 @@ exports.default = function () {
     _react2.default.createElement(
       'h1',
       null,
-      'This is what we\'re all about.'
-    ),
-    _react2.default.createElement(
-      'p',
-      null,
-      'React, static sites, performance, speed. It\'s the stuff that makes us tick.'
+      '404 - Oh no\'s! We couldn\'t find that page :('
     )
   );
 };
@@ -455,42 +450,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-//
-
-exports.default = function () {
-  return _react2.default.createElement(
-    'div',
-    null,
-    _react2.default.createElement(
-      'h1',
-      null,
-      '404 - Oh no\'s! We couldn\'t find that page :('
-    )
-  );
-};
-
-/***/ }),
-/* 9 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = __webpack_require__(10);
+var _reactDom = __webpack_require__(9);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _App = __webpack_require__(11);
+var _App = __webpack_require__(10);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -515,13 +479,13 @@ if (typeof document !== 'undefined') {
 }
 
 /***/ }),
-/* 10 */
+/* 9 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-dom");
 
 /***/ }),
-/* 11 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -537,13 +501,13 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactStatic = __webpack_require__(2);
 
-var _reactHotLoader = __webpack_require__(12);
+var _reactHotLoader = __webpack_require__(11);
 
-var _reactStaticRoutes = __webpack_require__(13);
+var _reactStaticRoutes = __webpack_require__(12);
 
 var _reactStaticRoutes2 = _interopRequireDefault(_reactStaticRoutes);
 
-__webpack_require__(27);
+__webpack_require__(26);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -563,13 +527,13 @@ var App = function App() {
 exports.default = App;
 
 /***/ }),
-/* 12 */
+/* 11 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-hot-loader");
 
 /***/ }),
-/* 13 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -579,15 +543,15 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _path2 = __webpack_require__(14);
+var _path2 = __webpack_require__(13);
 
 var _path3 = _interopRequireDefault(_path2);
 
-var _importCss2 = __webpack_require__(15);
+var _importCss2 = __webpack_require__(14);
 
 var _importCss3 = _interopRequireDefault(_importCss2);
 
-var _universalImport2 = __webpack_require__(16);
+var _universalImport2 = __webpack_require__(15);
 
 var _universalImport3 = _interopRequireDefault(_universalImport2);
 
@@ -599,9 +563,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(17);
+var _reactRouterDom = __webpack_require__(16);
 
-var _reactUniversalComponent = __webpack_require__(18);
+var _reactUniversalComponent = __webpack_require__(17);
 
 var _reactUniversalComponent2 = _interopRequireDefault(_reactUniversalComponent);
 
@@ -652,30 +616,10 @@ var t_0 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
   }
 }), universalOptions);
 var t_1 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
-  id: '../src/containers/About',
-  file: '/Users/slo/Developer/_opensource/conradlo.github.io/docs/react-static-routes.js',
-  load: function load() {
-    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 7)), (0, _importCss3.default)('src/containers/About', {
-      disableWarnings: true
-    })]).then(function (proms) {
-      return proms[0];
-    });
-  },
-  path: function path() {
-    return _path3.default.join(__dirname, '../src/containers/About');
-  },
-  resolve: function resolve() {
-    return /*require.resolve*/(7);
-  },
-  chunkName: function chunkName() {
-    return 'src/containers/About';
-  }
-}), universalOptions);
-var t_2 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/404',
   file: '/Users/slo/Developer/_opensource/conradlo.github.io/docs/react-static-routes.js',
   load: function load() {
-    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 8)), (0, _importCss3.default)('src/containers/404', {
+    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 7)), (0, _importCss3.default)('src/containers/404', {
       disableWarnings: true
     })]).then(function (proms) {
       return proms[0];
@@ -685,7 +629,7 @@ var t_2 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
     return _path3.default.join(__dirname, '../src/containers/404');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(8);
+    return /*require.resolve*/(7);
   },
   chunkName: function chunkName() {
     return 'src/containers/404';
@@ -693,11 +637,11 @@ var t_2 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
 }), universalOptions);
 
 // Template Map
-global.componentsByTemplateID = global.componentsByTemplateID || [t_0, t_1, t_2];
+global.componentsByTemplateID = global.componentsByTemplateID || [t_0, t_1];
 
 // Template Tree
 global.templateIDsByPath = global.templateIDsByPath || {
-  '404': 2
+  '404': 1
 
   // Get template for given path
 };var getComponentForPath = function getComponentForPath(path) {
@@ -772,31 +716,31 @@ exports.default = Routes;
 /* WEBPACK VAR INJECTION */}.call(exports, "/"))
 
 /***/ }),
-/* 14 */
+/* 13 */
 /***/ (function(module, exports) {
 
 module.exports = require("path");
 
 /***/ }),
-/* 15 */
+/* 14 */
 /***/ (function(module, exports) {
 
 module.exports = require("babel-plugin-universal-import/importCss");
 
 /***/ }),
-/* 16 */
+/* 15 */
 /***/ (function(module, exports) {
 
 module.exports = require("babel-plugin-universal-import/universalImport");
 
 /***/ }),
-/* 17 */
+/* 16 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-router-dom");
 
 /***/ }),
-/* 18 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -811,7 +755,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _requireUniversalModule = __webpack_require__(19);
+var _requireUniversalModule = __webpack_require__(18);
 
 Object.defineProperty(exports, 'CHUNK_NAMES', {
   enumerable: true,
@@ -826,7 +770,7 @@ Object.defineProperty(exports, 'MODULE_IDS', {
   }
 });
 
-var _reportChunks = __webpack_require__(20);
+var _reportChunks = __webpack_require__(19);
 
 Object.defineProperty(exports, 'ReportChunks', {
   enumerable: true,
@@ -843,7 +787,7 @@ var _propTypes = __webpack_require__(5);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _hoistNonReactStatics = __webpack_require__(21);
+var _hoistNonReactStatics = __webpack_require__(20);
 
 var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
@@ -1143,7 +1087,7 @@ exports.default = universal;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)(module)))
 
 /***/ }),
-/* 19 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1325,7 +1269,7 @@ var getConfig = function getConfig(isDynamic, universalConfig, options, props) {
 };
 
 /***/ }),
-/* 20 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1388,13 +1332,13 @@ ReportChunks.childContextTypes = {
 exports.default = ReportChunks;
 
 /***/ }),
-/* 21 */
+/* 20 */
 /***/ (function(module, exports) {
 
 module.exports = require("hoist-non-react-statics");
 
 /***/ }),
-/* 22 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1549,7 +1493,7 @@ exports.default = TextScramble;
 // const textScrambleObj = new TextScramble(element);
 
 /***/ }),
-/* 23 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -1563,22 +1507,22 @@ exports.push([module.i, "@charset \"UTF-8\";\n/*\n* Skeleton V2.0.4\n* Copyright
 
 
 /***/ }),
-/* 24 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var escape = __webpack_require__(25);
+var escape = __webpack_require__(24);
 exports = module.exports = __webpack_require__(1)(false);
 // imports
 
 
 // module
-exports.push([module.i, "/* Larger than mobile */\nbody {\n  background-color: #ffffff;\n  background-image: inline-image(\"ricepaper2_min.png\");\n  cursor: default;\n  user-select: none; }\n\na {\n  text-decoration: none;\n  color: #222; }\n  a:hover {\n    color: #D75A4A; }\n\n.app {\n  display: block;\n  height: auto;\n  position: absolute;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0; }\n\n.main {\n  height: 100%; }\n\n.name-row {\n  padding-top: 1em; }\n  @media (min-width: 550px) {\n    .name-row {\n      position: relative;\n      top: 50%;\n      transform: translateY(-100%); } }\n  .name-row h1 {\n    margin-bottom: 1rem; }\n\n.tag-row {\n  padding: 0 2px; }\n  @media (max-width: 550px) {\n    .tag-row {\n      padding: 0 4px;\n      font-size: 1.2em; } }\n  .tag-row .scrambling-text {\n    color: rgba(77, 77, 77, 0.5);\n    padding: 0 4px; }\n  .tag-row .scramble-text {\n    padding: 0 4px; }\n\n.tag-heart {\n  display: inline-block;\n  margin: -2px 2px 0;\n  width: 1em;\n  height: 1em;\n  background-image: url(" + escape(__webpack_require__(26)) + ");\n  background-repeat: no-repeat;\n  vertical-align: middle; }\n\n.motto-row {\n  display: none; }\n  @media (min-width: 550px) {\n    .motto-row {\n      display: block;\n      position: absolute;\n      bottom: 0;\n      width: 100%;\n      float: right;\n      padding-bottom: 2rem; } }\n  .motto-row .motto-container {\n    text-align: right;\n    font-size: 1em; }\n\n.motto-row-mobile {\n  display: initial;\n  position: absolute;\n  bottom: 0;\n  width: 100%;\n  float: right;\n  padding-bottom: 2rem; }\n  @media (min-width: 550px) {\n    .motto-row-mobile {\n      display: none; } }\n  .motto-row-mobile .motto-container {\n    text-align: right;\n    font-size: 1.6em;\n    line-height: 1em; }\n\n.container {\n  padding: 0; }\n\n.panel {\n  height: 100%;\n  width: 100%; }\n", ""]);
+exports.push([module.i, "/* Larger than mobile */\nbody {\n  background-color: #ffffff;\n  background-image: inline-image(\"ricepaper2_min.png\");\n  cursor: default;\n  user-select: none; }\n\na {\n  text-decoration: none;\n  color: #222; }\n  a:hover {\n    color: #D75A4A; }\n\n.app {\n  display: block;\n  height: auto;\n  position: absolute;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0; }\n\n.main {\n  height: 100%; }\n\n.name-row {\n  padding-top: 1em; }\n  @media (min-width: 550px) {\n    .name-row {\n      position: relative;\n      top: 50%;\n      transform: translateY(-100%); } }\n  .name-row h1 {\n    margin-bottom: 1rem; }\n\n.tag-row {\n  padding: 0 2px; }\n  @media (max-width: 550px) {\n    .tag-row {\n      padding: 0 4px;\n      font-size: 1.2em; } }\n  .tag-row .scrambling-text {\n    color: rgba(77, 77, 77, 0.5);\n    padding: 0 4px; }\n  .tag-row .scramble-text {\n    padding: 0 4px; }\n\n.tag-heart {\n  display: inline-block;\n  margin: -2px 2px 0;\n  width: 1em;\n  height: 1em;\n  background-image: url(" + escape(__webpack_require__(25)) + ");\n  background-repeat: no-repeat;\n  vertical-align: middle; }\n\n.motto-row {\n  display: none; }\n  @media (min-width: 550px) {\n    .motto-row {\n      display: block;\n      position: absolute;\n      bottom: 0;\n      width: 100%;\n      float: right;\n      padding-bottom: 2rem; } }\n  .motto-row .motto-container {\n    text-align: right;\n    font-size: 1em; }\n\n.motto-row-mobile {\n  display: initial;\n  position: absolute;\n  bottom: 0;\n  width: 100%;\n  float: right;\n  padding-bottom: 2rem; }\n  @media (min-width: 550px) {\n    .motto-row-mobile {\n      display: none; } }\n  .motto-row-mobile .motto-container {\n    text-align: right;\n    font-size: 1.6em;\n    line-height: 1em; }\n\n.container {\n  padding: 0; }\n\n.panel {\n  height: 100%;\n  width: 100%; }\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 25 */
+/* 24 */
 /***/ (function(module, exports) {
 
 module.exports = function escape(url) {
@@ -1600,18 +1544,18 @@ module.exports = function escape(url) {
 
 
 /***/ }),
-/* 26 */
+/* 25 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUwIDUwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MCA1MDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgoJPHBhdGggc3R5bGU9ImZpbGw6I0Q3NUE0QTsiIGQ9Ik0yNC44NSwxMC4xMjZjMi4wMTgtNC43ODMsNi42MjgtOC4xMjUsMTEuOTktOC4xMjVjNy4yMjMsMCwxMi40MjUsNi4xNzksMTMuMDc5LDEzLjU0MwoJYzAsMCwwLjM1MywxLjgyOC0wLjQyNCw1LjExOWMtMS4wNTgsNC40ODItMy41NDUsOC40NjQtNi44OTgsMTEuNTAzTDI0Ljg1LDQ4TDcuNDAyLDMyLjE2NWMtMy4zNTMtMy4wMzgtNS44NC03LjAyMS02Ljg5OC0xMS41MDMKCWMtMC43NzctMy4yOTEtMC40MjQtNS4xMTktMC40MjQtNS4xMTlDMC43MzQsOC4xNzksNS45MzYsMiwxMy4xNTksMkMxOC41MjIsMiwyMi44MzIsNS4zNDMsMjQuODUsMTAuMTI2eiIvPgo8L3N2Zz4="
 
 /***/ }),
-/* 27 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
 // imports
-exports.i(__webpack_require__(28), "");
+exports.i(__webpack_require__(27), "");
 
 // module
 exports.push([module.i, "\n", ""]);
@@ -1620,7 +1564,7 @@ exports.push([module.i, "\n", ""]);
 
 
 /***/ }),
-/* 28 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -1636,4 +1580,4 @@ exports.push([module.i, "/*! normalize.css v3.0.2 | MIT License | git.io/normali
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.433ed754.js.map
+//# sourceMappingURL=static.702af630.js.map
