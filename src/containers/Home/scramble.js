@@ -17,103 +17,112 @@ const phrases = [
   'being cool',
   'trending technologies',
   'music',
-  'food',
-];
+  'food'
+]
 
-const chars = 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM!<>-_\\/[]{}—=+*^?#________金木水火土日月手口人心女一あおえいうたかけくきこまめむみもさしすせそ';
+const chars =
+  'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM!<>-_\\/[]{}—=+*^?#________金木水火土日月手口人心女一あおえいうたかけくきこまめむみもさしすせそ'
 
 export default class TextScramble extends Component {
   constructor(prop) {
     super(prop)
+    this.textFieldRef = React.createRef()
     this.state = {
       counter: 0,
-      scramble: '',
+      scramble: ''
     }
   }
 
   componentDidMount() {
     this.start()
-    this.queue = [];
-    this.frame = 0;
-    this.frameRequest = null;
+    this.queue = []
+    this.frame = 0
+    this.frameRequest = null
   }
 
   start() {
     const { counter } = this.state
-    this.setText(phrases[counter]);
-    this.setState({
-      counter: (counter + 1) % phrases.length
-    })
-    setTimeout(this.start.bind(this), 2000)
+    this.setText(phrases[counter])
+    setTimeout(this.start.bind(this), 4000)
   }
 
   setText(newText) {
-    const { scramble } = this.state
+    const { scramble, counter } = this.state
 
-    const oldText = scramble;
-    const length = Math.max(oldText.length, newText.length);
-    // const promise = new Promise((resolve) => {
-    //   that.resolve = resolve;
-    //   return resolve;
-    // });
-    this.queue = [];
-    this.frame = 0;
+    const oldText = scramble
+    const length = Math.max(oldText.length, newText.length)
+    this.queue = []
+    this.frame = 0
     for (let i = 0; i < length; i++) {
-      const from = oldText[i] || '';
-      const to = newText[i] || '';
-      const start = Math.floor(Math.random() * 40);
-      const end = start + Math.floor(Math.random() * 40);
+      const from = oldText[i] || ''
+      const to = newText[i] || ''
+      const start = Math.floor(Math.random() * 40)
+      const end = start + Math.floor(Math.random() * 40)
       this.queue.push({
         from,
         to,
         start,
-        end,
-      });
+        end
+      })
     }
-    cancelAnimationFrame(this.frameRequest);
-    let t = { text: '', continue: true}
-    for (; t.continue; t = this.update(this.queue, this.frame)) {
-      this.frame += 1;
-      this.frameRequest = requestAnimationFrame(() => {});
+    cancelAnimationFrame(this.frameRequest)
+
+    let t = { text: newText, continue: true }
+    const f = () => {
+      t = this.update(this.queue, this.frame)
+      if (t.text) {
+        this.textFieldRef.current.innerHTML = t.text
+      }
+      if (t.continue) {
+        this.frame += 1
+        this.frameRequest = requestAnimationFrame(f)
+      }
     }
-    this.setState({ scramble: t.text });
+    this.frameRequest = requestAnimationFrame(f)
+    this.setState({
+      scramble: t.text,
+      counter: (counter + 1) % phrases.length
+    })
   }
 
   update(queue, frame) {
-    let output = '';
-    let complete = 0;
+    let output = ''
+    let complete = 0
     for (let i = 0, n = queue.length; i < n; i++) {
-      const _queue$i = queue[i];
-      const from = _queue$i.from;
-      const to = _queue$i.to;
-      const start = _queue$i.start;
-      const end = _queue$i.end;
-      let char = _queue$i.char;
+      const _queue$i = queue[i]
+      const from = _queue$i.from
+      const to = _queue$i.to
+      const start = _queue$i.start
+      const end = _queue$i.end
+      let char = _queue$i.char
 
       if (frame >= end) {
-        complete += 1;
-        output += to;
+        complete += 1
+        output += to
       } else if (frame >= start) {
         if (!char || Math.random() < 0.28) {
-          char = chars[Math.floor(Math.random() * chars.length)];
-          queue[i].char = char;
+          char = chars[Math.floor(Math.random() * chars.length)]
+          queue[i].char = char
         }
-        output += char;
+        output += char
       } else {
-        output += from;
+        output += from
       }
     }
-    
     return {
       text: output,
       continue: !(complete === queue.length)
-    };
+    }
   }
 
   render() {
-    return <span className="scramble-text">{this.state.scramble}</span>;
+    return (
+      <span ref={this.textFieldRef} className="scramble-text">
+        {this.state.scramble}
+      </span>
+    )
   }
-};
+}
 
 // const element = document.querySelector('.scramble-text');
 // const textScrambleObj = new TextScramble(element);
